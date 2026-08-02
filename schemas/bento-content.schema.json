@@ -1,0 +1,1979 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openresource-public.github.io/openresource-schema/schemas/bento-content.schema.json",
+  "title": "block content",
+  "description": "The `content` object of a block (`type: 'bento'`, the fixed discriminator): an optional stem, a list of tiles on the 12-column grid, and an optional beat timeline. Generated from the runtime validator — regenerate rather than edit. Prose documentation: blocks/bento.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "stem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/richTextDoc"
+        }
+      },
+      "description": "Optional framing line in a reserved band ABOVE the grid (\"The diagrams show examples of…\"). Text only — stimulus figures are grid tiles."
+    },
+    "tiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Stable id, unique within the block. Beat ops and dialogue `about` anchors reference it."
+          },
+          "part": {
+            "type": "string",
+            "description": "Optional part tag grouping tiles into labelled question parts — a lowercase letter or roman numeral (\"a\", \"b\", \"i\", …). Every surface renders the \"(a)\" label FROM this field; never write the label into the tile text. Keep a part's tiles contiguous in the list."
+          },
+          "speaker": {
+            "type": "string",
+            "description": "Optional speaker id (of some dialogue tile in this block) who \"owns\" this tile — renders avatar chrome beside it with no speech bubble (\"Sofia's data\")."
+          },
+          "cell": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "col": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12,
+                "description": "1-based leftmost column (grid is 12 columns: w=3 quarter, w=4 third, w=6 half, w=12 full)."
+              },
+              "row": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "1-based top band. Bands are unbounded; a slide-page is 6 bands and taller blocks paginate at band boundaries."
+              },
+              "w": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12,
+                "description": "Column span. Prefer 3/4/6/12 (quarter/third/half/full). Prose narrower than 3 draws a warning."
+              },
+              "h": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6,
+                "description": "Band span, max 6 (a tile must fit one slide-page of 6 bands)."
+              }
+            },
+            "required": [
+              "col",
+              "row",
+              "w",
+              "h"
+            ],
+            "description": "The rect this tile occupies on the 12-column grid. No two tiles may overlap; holes are fine."
+          },
+          "marking": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "mode": {
+                    "const": "auto"
+                  },
+                  "correctAnswer": {},
+                  "match": {
+                    "type": "string",
+                    "enum": [
+                      "exact",
+                      "set",
+                      "range",
+                      "tolerance",
+                      "latex",
+                      "value"
+                    ]
+                  },
+                  "intent": {
+                    "type": "string",
+                    "enum": [
+                      "equivalent",
+                      "same-form"
+                    ],
+                    "description": "latex match only: equivalent (default) accepts any algebraically-equal form; same-form assesses the written form structurally."
+                  },
+                  "tolerance": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "marks": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "groups": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "blanks": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "pairs": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "anyOrder": {
+                          "type": "boolean"
+                        },
+                        "distinct": {
+                          "type": "boolean"
+                        },
+                        "sum": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "description": "Cross-slot constraints on typed kinds. blanks + anyOrder grades the group by one-to-one assignment (either order accepted); distinct requires the entries to differ; sum requires the entries to total exactly this number. pairs (ordered slot-id tuples, e.g. [[\"x1\",\"y1\"],[\"x2\",\"y2\"]] with anyOrder: true) grades whole tuples by assignment — solution pairs in either order, never mixed across pairs; a group carries blanks or pairs, not both."
+                  }
+                },
+                "required": [
+                  "mode"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "mode": {
+                    "const": "rubric"
+                  },
+                  "scheme": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "type": {
+                            "const": "criteria"
+                          },
+                          "criteria": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "description": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "object"
+                                    }
+                                  ]
+                                },
+                                "marks": {
+                                  "type": "number",
+                                  "minimum": 0
+                                }
+                              },
+                              "required": [
+                                "description",
+                                "marks"
+                              ]
+                            },
+                            "minItems": 1
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "criteria"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "type": {
+                            "const": "levels"
+                          },
+                          "levels": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "range": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  "minItems": 2,
+                                  "maxItems": 2
+                                },
+                                "descriptor": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "object"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "range",
+                                "descriptor"
+                              ]
+                            },
+                            "minItems": 1
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "levels"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "type": {
+                            "const": "method-accuracy"
+                          },
+                          "marks": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "method",
+                                    "accuracy"
+                                  ]
+                                },
+                                "description": {
+                                  "anyOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "object"
+                                    }
+                                  ]
+                                },
+                                "marks": {
+                                  "type": "number",
+                                  "minimum": 0
+                                },
+                                "answer": {},
+                                "tolerance": {
+                                  "type": "number",
+                                  "minimum": 0
+                                }
+                              },
+                              "required": [
+                                "kind",
+                                "description",
+                                "marks"
+                              ]
+                            },
+                            "minItems": 1
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "marks"
+                        ]
+                      }
+                    ]
+                  },
+                  "marks": {
+                    "type": "number",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "mode",
+                  "scheme",
+                  "marks"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "mode": {
+                    "const": "none"
+                  }
+                },
+                "required": [
+                  "mode"
+                ]
+              }
+            ],
+            "description": "How this tile is scored. mode \"auto\" (machine key) sits on markable kinds only (options / matching / ordering / gaps / table / model); mode \"rubric\" (human-marked extended response — scheme + marks, never auto-scored) sits on a `text` or `working` tile carrying the task statement. A marked tile requires block role \"question\" (or \"worked-example\"); answers persist keyed (blockId, tileId)."
+          },
+          "response": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "free-text",
+                  "working"
+                ],
+                "description": "free-text: ruled prose lines. working: squared/working space for stepped maths."
+              },
+              "lines": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 30,
+                "description": "Answer-space size in lines. Omit for the default: 2 lines per rubric mark, clamped 4–12."
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "description": "Rubric-marked tiles only: the answer space the pupil gets — rendered as input on web, ruled/working space in print and DOCX. Display + capture furniture; nothing machine-marks the response (rubric scoring is human/AI, out of scope)."
+          },
+          "responseMode": {
+            "type": "string",
+            "enum": [
+              "place-point",
+              "select-point",
+              "select-region",
+              "run-value",
+              "run-query",
+              "run-program",
+              "fill-derived",
+              "place-derived",
+              "construct",
+              "place-line",
+              "show-inequality",
+              "mark-cross",
+              "plot-curve",
+              "draw-histogram",
+              "draw-journey",
+              "shade-region",
+              "line-of-best-fit",
+              "read-off",
+              "transform-curve",
+              "sketch-curve",
+              "draw-tangent"
+            ],
+            "description": "Answer-on-the-model tiles only (a marked `model` tile): the interaction the pupil uses on the figure — place-point (drag a point to a coordinate; correctAnswer { x, y } + optional tolerance), select-point (tap a rendered point; correctAnswer a label or labels), select-region (tap an area; correctAnswer a set of region ids), run-value (a runtime model reports one computed value as an observation; correctAnswer { value, require?, exemplar? } + optional tolerance), run-program (\"write a program/function that…\" on cs/code-editor — the model executes the pupil's code AND an authored reference over the same tests and marks agreement of what they DO: printed lines per stdin test in program mode (Python), or the named function's return values in function mode (Python or JavaScript, and the reference may be a different language from the pupil); correctAnswer { derived: true }, and the model params must carry markProgram with the visible code param left as the task, so static surfaces pose a blank answer space and the reference is never rendered), run-query (\"write a query that returns…\" on cs/sql-playground — the model runs the pupil's query AND an authored reference query over its own tables plus derived variants of that data, and marks agreement of the result-sets, so every equivalent query passes and one that hard-codes rows read off the table fails; correctAnswer { derived: true }, and the model params must carry markQuery.reference with the visible query param left as the task, so static surfaces pose a blank answer space and the reference is never rendered), fill-derived (a derive-first model — two-way-table, frequency-tree, stem-leaf — makes every hidden cell/node/row an editable box and self-checks each typed value against the value it derives from its own data; correctAnswer { derived: true }, no authored values), place-derived (fill-derived's positional twin — the pupil DRAGS role-named markers onto the figure's scale instead of typing; the model self-checks each placed position against the value it derives — box-cf box-plot completion; correctAnswer { derived: true }), construct (fill-derived's shape-the-figure twin — the pupil drags the figure itself into proportion, e.g. pie-chart sector boundaries from an equal-sector start; the model self-checks each part against the value it derives, within its tolerance param; correctAnswer { derived: true }, and the model params must also set construct: true so print/static surfaces pose the question instead of drawing the answer), place-line (\"draw the line …\" on a coordinate grid — a complete but WRONG line is pre-placed as two draggable handle points snapping to the grid; the model self-checks the committed points against the target line in its placeLine param — any two distinct points on the correct line pass; correctAnswer { derived: true }, and the model params must carry placeLine ({m, c} | {x} | {y}) so print/static surfaces pose a blank answer space instead of drawing the answer), show-inequality (\"show the inequality on a number line\" — a complete but WRONG interval is pre-drawn as draggable endpoints and the pupil reshapes it to the target; the model self-checks each component against the constructInequality param; correctAnswer { derived: true }, and the model params must carry constructInequality ({ from, to, fromClosed, toClosed }) so static surfaces pose the wrong start, not the answer — construct's rule, number-line's param), mark-cross (\"mark with a cross the probability that…\" — one or more crosses start PARKED off the scale and the pupil drags each onto the line; the model self-checks each placed cross against the markCrosses param; correctAnswer { derived: true }, and the model params must carry a non-empty markCrosses ([{ at, label? }]) so static surfaces pose the blank scale), plot-curve (\"draw the graph of y = f(x)\" — one handle per tabulated x parks on the x-axis and the pupil drags it up; the model self-checks each placed height against the derived f(x) from its plotCurve param; correctAnswer { derived: true }, and the model params must carry plotCurve ({ fn, xs }) with curves left empty so static surfaces pose the blank grid), transform-curve (\"sketch the graph of y = -f(x)\" — an amber COPY of the shown source curve starts as the identity; the pupil drags it to translate (half-step snap), taps a reflect icon-button to flip it about an axis (one tap = f(-x) or -f(x)), or drags an edge grip to stretch it; the model self-checks the final curve against the transform in its transformCurve param by sampling; correctAnswer { derived: true }, and the model params must carry transformCurve ({ curve?, target: { dx, dy, sx, sy } }) with the source curve drawn in curves — static surfaces pose the source curve alone), sketch-curve (\"sketch y = f(x)\" from RECALL on graphing/function-graph@6 — no base curve is drawn and no table is given, so neither transform-curve nor plot-curve fits: the pupil picks a parent shape from a palette of unnamed shape glyphs and drags/reflects/stretches it into place; the model self-checks each placed curve against the target's derived branch count, asymptote positions and turning points, never pointwise y; correctAnswer { derived: true }, and the model params must carry sketchCurve ({ fns: [{ fn }] }, up to 3 targets so \"both on the same axes\" marks as one figure) with curves left empty unless a curve is genuinely given — static surfaces pose blank answer axes), draw-histogram (\"draw a histogram for the information in the table\" — the class intervals are fixed on the x-axis and the pupil drags each bar's top to its frequency density; the model self-checks each height against the density it derives, frequency ÷ class width; correctAnswer { derived: true }, and the model params must set drawHistogram: true with the full classes so static surfaces pose the blank grid — bars marked given: true are pre-printed context and are not marked), draw-tangent (\"draw a tangent to the curve at x = a\" — the science-rates staple on graphing/first-principles: a deliberately wrong pre-placed line through the marked point pivots as the pupil drags anywhere along it, and the model self-checks their gradient against the derived f′(a) within its gradientTolerance param (or a ±5° by-eye band); correctAnswer { derived: true }, and the model params must set drawTangent: true with point (the touch point) so static surfaces pose the curve + marked point as a blank answer space — the true tangent is never drawn on any surface). The model must support the mode (its library meta responseModes)."
+          },
+          "text": {
+            "$ref": "#/$defs/richTextDoc",
+            "description": "Prose payload (tiptap). Body paragraphs, bullets."
+          },
+          "working": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Stepped written maths — equation chains, simultaneous elimination, proofs with reasons, balance method. Use instead of `text` when the content is a multi-line working. Alignment is derived: write each statement as a plain equation, never alignment markup. Prompt prose and given equations are leading lines with align:false. Annotations (label / note / arcs / rule) are the exception, not the default: most lines carry none — annotate only the step a pupil would question, or when reasons are explicitly wanted (a proof, a teacher request). Lists/headings belong in a text block; place-value layouts (column arithmetic, bus stop) in models.",
+            "properties": {
+              "lhsAlign": {
+                "enum": [
+                  "right",
+                  "left"
+                ],
+                "description": "Alignment of the LHS cell. Default \"right\" (equation chains, elimination — line ends meet the relation). \"left\" suits balance-method layouts where coefficients stack in a column."
+              },
+              "lines": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "statement": {
+                      "$ref": "#/$defs/richTextDoc",
+                      "description": "The line: one paragraph of inline text and/or math runs. A maths line is usually one math node (\"4b-5a=7\")."
+                    },
+                    "label": {
+                      "type": "string",
+                      "description": "Gutter lead-in for equation annotations only. Parenthesised integers render as circled equation references — \"(1)\", \"(1)+(2)\", \"3×(1)\"; operation notes (\"×100\", \"∴\") render as written. Labels render in the annotation accent outside the alignment column — never use them as part tags, names or column headings: put \"(b) \" / \"Melvin: \" as a leading text run in the statement, and head a comparison column with a leading align:false text line."
+                    },
+                    "note": {
+                      "$ref": "#/$defs/richTextDoc",
+                      "description": "Right-column reason (\"angles in a triangle sum to 180°\"). Muted, smaller; may contain math. Sparingly — not a running commentary."
+                    },
+                    "rule": {
+                      "enum": [
+                        "above",
+                        "below"
+                      ],
+                      "description": "Thick combining rule. \"above\" goes on the result line of an elimination/column sum (reveals with that line); \"below\" underlines this line."
+                    },
+                    "align": {
+                      "type": "boolean",
+                      "description": "Join the relation-alignment group. Default true; set false for prose lines (\"Case 1: x > 0\") and full-width givens."
+                    },
+                    "alignAt": {
+                      "type": "integer",
+                      "description": "Manual alignment point (character offset in the statement latex) when derivation misjudges. Rarely needed."
+                    },
+                    "arcs": {
+                      "type": "array",
+                      "description": "Term-link arcs (FOIL expansion pairings and similar): each arc joins two term marks authored in this line's statement latex via \\htmlClass{lv-wkm-<id>}{term}, drawn above or below in the annotation colour.",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "from": {
+                            "type": "string",
+                            "description": "Mark id of the arc's first term."
+                          },
+                          "to": {
+                            "type": "string",
+                            "description": "Mark id of the arc's second term."
+                          },
+                          "side": {
+                            "enum": [
+                              "above",
+                              "below"
+                            ],
+                            "description": "Which side of the terms the arc bows. Default above."
+                          }
+                        },
+                        "required": [
+                          "from",
+                          "to"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "statement"
+                  ]
+                }
+              },
+              "result": {
+                "type": "object",
+                "additionalProperties": false,
+                "description": "Answer lines: one latex string per line, each centred on a grey dotted answer line (exam-paper style), under the statement columns. Reveals as the final stage.",
+                "properties": {
+                  "lines": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "lines"
+                ]
+              }
+            },
+            "required": [
+              "lines"
+            ]
+          },
+          "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "src": {
+                "type": "string"
+              },
+              "srcRect": {
+                "type": "object"
+              },
+              "altText": {
+                "type": "string"
+              },
+              "search": {
+                "type": "string"
+              },
+              "rotation": {
+                "type": "number"
+              },
+              "caption": {
+                "$ref": "#/$defs/richTextDoc"
+              },
+              "attribution": {
+                "$ref": "#/$defs/richTextDoc"
+              },
+              "orientation": {
+                "type": "string",
+                "enum": [
+                  "landscape",
+                  "portrait"
+                ]
+              },
+              "width": {
+                "type": "number"
+              },
+              "slideWidth": {
+                "type": "number"
+              }
+            }
+          },
+          "model": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "ref": {
+                "type": "string",
+                "pattern": "^(?:([a-z0-9]+(?:-[a-z0-9]+)*)\\/([a-z0-9]+(?:-[a-z0-9]+)*)@(\\d+)|user:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))$",
+                "description": "Pinned model reference — `family/name@version`, e.g. \"graphing/coordinate-grid@1\" (or a user-lane `user:<id>` ref from the model workshop)."
+              },
+              "params": {
+                "type": "object",
+                "description": "Parameters for the model, matching its published interface. Validated at write time — invalid params are rejected with the failing paths so you can correct and retry."
+              },
+              "altText": {
+                "type": "string",
+                "description": "Agent-authored description of what the rendered model shows, written from the params. Lead with kind: \"Coordinate grid showing points A (3,2) and B (7,5)\", \"Area model for (x+3)(x+2)\". Required — it is the accessibility text, the search surface, and the fallback if the model cannot render."
+              },
+              "caption": {
+                "type": "object",
+                "additionalProperties": true,
+                "description": "Optional figure caption — a tiptap richText doc shown as a small line directly below the model. Use for a gloss that adds teaching value (\"Figure 2: the region x + y < 4\"), not to restate what altText already says. A figure's caption belongs here, on the model — never on a separate tile."
+              },
+              "width": {
+                "type": "number"
+              },
+              "slideWidth": {
+                "type": "number"
+              },
+              "steps": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                      "description": "Kebab-case stage name, e.g. \"rays-on\", \"image-appears\"."
+                    },
+                    "params": {
+                      "type": "object",
+                      "description": "FULL paramset for this stage (not a patch) — validated against the model interface exactly like the base params. Keep axes/ranges identical to the base so the figure never jumps between stages."
+                    },
+                    "altText": {
+                      "type": "string",
+                      "description": "Optional per-stage accessibility text describing what changed. Falls back to the slot altText."
+                    },
+                    "revealAt": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "description": "Answer-synced staging only (a model on a QUESTION, e.g. a marked tile's figure). The answer-reveal BEAT (1-based: 1 = the first \"next\" press, 2 = the second, …) at which this figure stage activates — peg it to whichever beat reveals the matching part of the answer (e.g. the beat that fills the last gap, or reveals the correct option). Between pegs the figure holds. Omit `revealAt` on all steps for the default: the figure completes on the FINAL reveal."
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "params"
+                  ]
+                },
+                "description": "Optional staged progression of the SAME figure: each entry is a complete paramset reached sequentially after the base params (stage 0). On a MODEL tile, the beat timeline advances the figure: a beat op { tile, op: \"stage\", stage: n } jumps the model to steps[n] (occlusion release is a stage whose params un-occlude). On a question, the stages advance in sync with the ANSWER reveal — the same \"next\" that reveals the answer also advances the figure; peg each stage to a beat with `revealAt`, or omit it everywhere for the default (the figure completes on the final reveal). Never combined with draggable params. Use when the construction ACCUMULATES (same axes, same shape, things added or moved), not for unrelated figures."
+              }
+            },
+            "required": [
+              "ref",
+              "params",
+              "altText"
+            ],
+            "description": "Optional computed-model slot — renders a parameterised, versioned visual from the model library. A peer of `image`: same envelope position, but the model is generated from `params` rather than bound to an asset."
+          },
+          "video": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "url": {
+                "type": "string",
+                "description": "Video url. A YouTube or Vimeo watch/share link, a direct video file (.mp4/.webm/.ogg/.mov), or an uploaded video. The renderer detects the source and embeds the right player. Pin a stable, shareable url."
+              },
+              "altText": {
+                "type": "string",
+                "description": "Agent-authored description of what the video shows or teaches. Lead with kind: \"Video explaining …\", \"Screencast demonstrating …\", \"Clip of …\". Required — it is the accessibility text, the search surface, and the fallback shown where a video cannot play (print and export surfaces)."
+              },
+              "title": {
+                "type": "string",
+                "description": "Optional short title rendered above the player, e.g. \"Tutorial: balancing equations\"."
+              },
+              "caption": {
+                "$ref": "#/$defs/richTextDoc",
+                "description": "Optional figcaption (a tiptap richText doc) shown beneath the video — a source credit (\"Source: Khan Academy\"), an author gloss, or both. Agent-authored directly."
+              },
+              "width": {
+                "type": "number"
+              },
+              "slideWidth": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "url",
+              "altText"
+            ],
+            "description": "Optional embedded-video slot — a playable video from a url (YouTube / Vimeo / direct file / uploaded). A peer of `image` and `primitive`: same envelope position, the figure is a video. Fully agent-authored (url + altText) — no element ref, no hydration."
+          },
+          "dialogue": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "speakers": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "avatar": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "src": {
+                          "type": "string"
+                        },
+                        "srcRect": {
+                          "type": "object"
+                        },
+                        "altText": {
+                          "type": "string"
+                        },
+                        "search": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "caption": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "attribution": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": [
+                            "landscape",
+                            "portrait"
+                          ]
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              },
+              "turns": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "speaker": {
+                      "type": "string",
+                      "description": "Must match a speakers[].id."
+                    },
+                    "text": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "about": {
+                      "type": "string",
+                      "description": "Optional id of a sibling tile this turn comments on — draws the bubble pointing at that tile. Omit when the turn addresses the whole block."
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "speaker"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "speakers",
+              "turns"
+            ],
+            "description": "Speech: named speakers with avatar chrome, ordered turns. One bubble per turn. A single speaker with one turn is the \"character commenting on a figure\" pattern."
+          },
+          "table": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rows": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "cells": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Optional cell id. Required only on gap cells of an auto-marked table — marking.correctAnswer keys the accepted answer by this id (survives row/col edits)."
+                          },
+                          "text": {
+                            "$ref": "#/$defs/richTextDoc"
+                          },
+                          "image": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "src": {
+                                "type": "string"
+                              },
+                              "srcRect": {
+                                "type": "object"
+                              },
+                              "altText": {
+                                "type": "string"
+                              },
+                              "search": {
+                                "type": "string"
+                              },
+                              "rotation": {
+                                "type": "number"
+                              },
+                              "caption": {
+                                "$ref": "#/$defs/richTextDoc"
+                              },
+                              "attribution": {
+                                "$ref": "#/$defs/richTextDoc"
+                              },
+                              "orientation": {
+                                "type": "string",
+                                "enum": [
+                                  "landscape",
+                                  "portrait"
+                                ]
+                              },
+                              "width": {
+                                "type": "number"
+                              },
+                              "slideWidth": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "gap": {
+                            "type": "boolean",
+                            "description": "Pose-and-reveal: the cell's content is withheld. Teacher-led → a beat reveals it (target the cell with op reveal). Auto-marked → the pupil types into it (give the cell an id and a marking.correctAnswer entry)."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "cells"
+                  ]
+                }
+              },
+              "hasHeaderRow": {
+                "type": "boolean"
+              },
+              "hasHeaderCol": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "rows"
+            ],
+            "description": "A rectangular grid of cells (every row the same length). Header semantics via hasHeaderRow / hasHeaderCol. Marking on the tile turns gap cells into typed-answer inputs."
+          },
+          "options": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "variant": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "multi",
+                  "boolean"
+                ],
+                "description": "single: one correct option. multi: several. boolean: fixed True/False pair (author no options)."
+              },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "src": {
+                          "type": "string"
+                        },
+                        "srcRect": {
+                          "type": "object"
+                        },
+                        "altText": {
+                          "type": "string"
+                        },
+                        "search": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "caption": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "attribution": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": [
+                            "landscape",
+                            "portrait"
+                          ]
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "primitive": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "ref": {
+                          "type": "string",
+                          "pattern": "^(?:([a-z0-9]+(?:-[a-z0-9]+)*)\\/([a-z0-9]+(?:-[a-z0-9]+)*)@(\\d+)|user:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))$",
+                          "description": "Pinned model reference — `family/name@version`, e.g. \"graphing/coordinate-grid@1\" (or a user-lane `user:<id>` ref from the model workshop)."
+                        },
+                        "params": {
+                          "type": "object",
+                          "description": "Parameters for the model, matching its published interface. Validated at write time — invalid params are rejected with the failing paths so you can correct and retry."
+                        },
+                        "altText": {
+                          "type": "string",
+                          "description": "Agent-authored description of what the rendered model shows, written from the params. Lead with kind: \"Coordinate grid showing points A (3,2) and B (7,5)\", \"Area model for (x+3)(x+2)\". Required — it is the accessibility text, the search surface, and the fallback if the model cannot render."
+                        },
+                        "caption": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "description": "Optional figure caption — a tiptap richText doc shown as a small line directly below the model. Use for a gloss that adds teaching value (\"Figure 2: the region x + y < 4\"), not to restate what altText already says. A figure's caption belongs here, on the model — never on a separate tile."
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        },
+                        "steps": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                                "description": "Kebab-case stage name, e.g. \"rays-on\", \"image-appears\"."
+                              },
+                              "params": {
+                                "type": "object",
+                                "description": "FULL paramset for this stage (not a patch) — validated against the model interface exactly like the base params. Keep axes/ranges identical to the base so the figure never jumps between stages."
+                              },
+                              "altText": {
+                                "type": "string",
+                                "description": "Optional per-stage accessibility text describing what changed. Falls back to the slot altText."
+                              },
+                              "revealAt": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "description": "Answer-synced staging only (a model on a QUESTION, e.g. a marked tile's figure). The answer-reveal BEAT (1-based: 1 = the first \"next\" press, 2 = the second, …) at which this figure stage activates — peg it to whichever beat reveals the matching part of the answer (e.g. the beat that fills the last gap, or reveals the correct option). Between pegs the figure holds. Omit `revealAt` on all steps for the default: the figure completes on the FINAL reveal."
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "params"
+                            ]
+                          },
+                          "description": "Optional staged progression of the SAME figure: each entry is a complete paramset reached sequentially after the base params (stage 0). On a MODEL tile, the beat timeline advances the figure: a beat op { tile, op: \"stage\", stage: n } jumps the model to steps[n] (occlusion release is a stage whose params un-occlude). On a question, the stages advance in sync with the ANSWER reveal — the same \"next\" that reveals the answer also advances the figure; peg each stage to a beat with `revealAt`, or omit it everywhere for the default (the figure completes on the final reveal). Never combined with draggable params. Use when the construction ACCUMULATES (same axes, same shape, things added or moved), not for unrelated figures."
+                        }
+                      },
+                      "required": [
+                        "ref",
+                        "params",
+                        "altText"
+                      ],
+                      "description": "Optional computed-model slot — renders a parameterised, versioned visual from the model library. A peer of `image`: same envelope position, but the model is generated from `params` rather than bound to an asset."
+                    },
+                    "shapeCluster": {
+                      "type": "object"
+                    },
+                    "feedback": {
+                      "$ref": "#/$defs/richTextDoc",
+                      "description": "Optional per-item feedback shown after Check when the pupil selected this item — on a distractor, why it tempts and where it goes wrong; on the right answer, brief reinforcement. Distractor pedagogy, not the worked solution (that is the block's explanation). Single-select and True/False have no Check (the card marks itself on click), so it does not surface there."
+                    },
+                    "misconceptionId": {
+                      "type": "string",
+                      "description": "Optional id of the lesson-level misconceptions registry entry this distractor embodies — connects the registry to the option that operationalises it (analytics). Teacher-facing: never shown to the pupil; author `feedback` for that."
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                "description": "The choices (omit for boolean)."
+              },
+              "justification": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "options": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "correctWhen": {
+                          "type": "boolean",
+                          "description": "Which truth value this justification is correct for."
+                        },
+                        "text": {
+                          "$ref": "#/$defs/richTextDoc"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "correctWhen"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "options"
+                ],
+                "description": "Boolean variant only: the \"justify your answer\" secondary options."
+              }
+            },
+            "description": "Choice question payload. Marking on the tile: single → option id, multi → id array, boolean → boolean."
+          },
+          "matching": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "variant": {
+                "type": "string",
+                "enum": [
+                  "pairs",
+                  "categorise"
+                ],
+                "description": "pairs: 1-to-1 (equal columns). categorise: many-to-one (right column = buckets)."
+              },
+              "leftColumn": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "src": {
+                          "type": "string"
+                        },
+                        "srcRect": {
+                          "type": "object"
+                        },
+                        "altText": {
+                          "type": "string"
+                        },
+                        "search": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "caption": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "attribution": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": [
+                            "landscape",
+                            "portrait"
+                          ]
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "primitive": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "ref": {
+                          "type": "string",
+                          "pattern": "^(?:([a-z0-9]+(?:-[a-z0-9]+)*)\\/([a-z0-9]+(?:-[a-z0-9]+)*)@(\\d+)|user:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))$",
+                          "description": "Pinned model reference — `family/name@version`, e.g. \"graphing/coordinate-grid@1\" (or a user-lane `user:<id>` ref from the model workshop)."
+                        },
+                        "params": {
+                          "type": "object",
+                          "description": "Parameters for the model, matching its published interface. Validated at write time — invalid params are rejected with the failing paths so you can correct and retry."
+                        },
+                        "altText": {
+                          "type": "string",
+                          "description": "Agent-authored description of what the rendered model shows, written from the params. Lead with kind: \"Coordinate grid showing points A (3,2) and B (7,5)\", \"Area model for (x+3)(x+2)\". Required — it is the accessibility text, the search surface, and the fallback if the model cannot render."
+                        },
+                        "caption": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "description": "Optional figure caption — a tiptap richText doc shown as a small line directly below the model. Use for a gloss that adds teaching value (\"Figure 2: the region x + y < 4\"), not to restate what altText already says. A figure's caption belongs here, on the model — never on a separate tile."
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        },
+                        "steps": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                                "description": "Kebab-case stage name, e.g. \"rays-on\", \"image-appears\"."
+                              },
+                              "params": {
+                                "type": "object",
+                                "description": "FULL paramset for this stage (not a patch) — validated against the model interface exactly like the base params. Keep axes/ranges identical to the base so the figure never jumps between stages."
+                              },
+                              "altText": {
+                                "type": "string",
+                                "description": "Optional per-stage accessibility text describing what changed. Falls back to the slot altText."
+                              },
+                              "revealAt": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "description": "Answer-synced staging only (a model on a QUESTION, e.g. a marked tile's figure). The answer-reveal BEAT (1-based: 1 = the first \"next\" press, 2 = the second, …) at which this figure stage activates — peg it to whichever beat reveals the matching part of the answer (e.g. the beat that fills the last gap, or reveals the correct option). Between pegs the figure holds. Omit `revealAt` on all steps for the default: the figure completes on the FINAL reveal."
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "params"
+                            ]
+                          },
+                          "description": "Optional staged progression of the SAME figure: each entry is a complete paramset reached sequentially after the base params (stage 0). On a MODEL tile, the beat timeline advances the figure: a beat op { tile, op: \"stage\", stage: n } jumps the model to steps[n] (occlusion release is a stage whose params un-occlude). On a question, the stages advance in sync with the ANSWER reveal — the same \"next\" that reveals the answer also advances the figure; peg each stage to a beat with `revealAt`, or omit it everywhere for the default (the figure completes on the final reveal). Never combined with draggable params. Use when the construction ACCUMULATES (same axes, same shape, things added or moved), not for unrelated figures."
+                        }
+                      },
+                      "required": [
+                        "ref",
+                        "params",
+                        "altText"
+                      ],
+                      "description": "Optional computed-model slot — renders a parameterised, versioned visual from the model library. A peer of `image`: same envelope position, but the model is generated from `params` rather than bound to an asset."
+                    },
+                    "shapeCluster": {
+                      "type": "object"
+                    },
+                    "feedback": {
+                      "$ref": "#/$defs/richTextDoc",
+                      "description": "Optional per-item feedback shown after Check when the pupil selected this item — on a distractor, why it tempts and where it goes wrong; on the right answer, brief reinforcement. Distractor pedagogy, not the worked solution (that is the block's explanation). Single-select and True/False have no Check (the card marks itself on click), so it does not surface there."
+                    },
+                    "misconceptionId": {
+                      "type": "string",
+                      "description": "Optional id of the lesson-level misconceptions registry entry this distractor embodies — connects the registry to the option that operationalises it (analytics). Teacher-facing: never shown to the pupil; author `feedback` for that."
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              },
+              "rightColumn": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "src": {
+                          "type": "string"
+                        },
+                        "srcRect": {
+                          "type": "object"
+                        },
+                        "altText": {
+                          "type": "string"
+                        },
+                        "search": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "caption": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "attribution": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": [
+                            "landscape",
+                            "portrait"
+                          ]
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "primitive": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "ref": {
+                          "type": "string",
+                          "pattern": "^(?:([a-z0-9]+(?:-[a-z0-9]+)*)\\/([a-z0-9]+(?:-[a-z0-9]+)*)@(\\d+)|user:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))$",
+                          "description": "Pinned model reference — `family/name@version`, e.g. \"graphing/coordinate-grid@1\" (or a user-lane `user:<id>` ref from the model workshop)."
+                        },
+                        "params": {
+                          "type": "object",
+                          "description": "Parameters for the model, matching its published interface. Validated at write time — invalid params are rejected with the failing paths so you can correct and retry."
+                        },
+                        "altText": {
+                          "type": "string",
+                          "description": "Agent-authored description of what the rendered model shows, written from the params. Lead with kind: \"Coordinate grid showing points A (3,2) and B (7,5)\", \"Area model for (x+3)(x+2)\". Required — it is the accessibility text, the search surface, and the fallback if the model cannot render."
+                        },
+                        "caption": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "description": "Optional figure caption — a tiptap richText doc shown as a small line directly below the model. Use for a gloss that adds teaching value (\"Figure 2: the region x + y < 4\"), not to restate what altText already says. A figure's caption belongs here, on the model — never on a separate tile."
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        },
+                        "steps": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                                "description": "Kebab-case stage name, e.g. \"rays-on\", \"image-appears\"."
+                              },
+                              "params": {
+                                "type": "object",
+                                "description": "FULL paramset for this stage (not a patch) — validated against the model interface exactly like the base params. Keep axes/ranges identical to the base so the figure never jumps between stages."
+                              },
+                              "altText": {
+                                "type": "string",
+                                "description": "Optional per-stage accessibility text describing what changed. Falls back to the slot altText."
+                              },
+                              "revealAt": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "description": "Answer-synced staging only (a model on a QUESTION, e.g. a marked tile's figure). The answer-reveal BEAT (1-based: 1 = the first \"next\" press, 2 = the second, …) at which this figure stage activates — peg it to whichever beat reveals the matching part of the answer (e.g. the beat that fills the last gap, or reveals the correct option). Between pegs the figure holds. Omit `revealAt` on all steps for the default: the figure completes on the FINAL reveal."
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "params"
+                            ]
+                          },
+                          "description": "Optional staged progression of the SAME figure: each entry is a complete paramset reached sequentially after the base params (stage 0). On a MODEL tile, the beat timeline advances the figure: a beat op { tile, op: \"stage\", stage: n } jumps the model to steps[n] (occlusion release is a stage whose params un-occlude). On a question, the stages advance in sync with the ANSWER reveal — the same \"next\" that reveals the answer also advances the figure; peg each stage to a beat with `revealAt`, or omit it everywhere for the default (the figure completes on the final reveal). Never combined with draggable params. Use when the construction ACCUMULATES (same axes, same shape, things added or moved), not for unrelated figures."
+                        }
+                      },
+                      "required": [
+                        "ref",
+                        "params",
+                        "altText"
+                      ],
+                      "description": "Optional computed-model slot — renders a parameterised, versioned visual from the model library. A peer of `image`: same envelope position, but the model is generated from `params` rather than bound to an asset."
+                    },
+                    "shapeCluster": {
+                      "type": "object"
+                    },
+                    "feedback": {
+                      "$ref": "#/$defs/richTextDoc",
+                      "description": "Optional per-item feedback shown after Check when the pupil selected this item — on a distractor, why it tempts and where it goes wrong; on the right answer, brief reinforcement. Distractor pedagogy, not the worked solution (that is the block's explanation). Single-select and True/False have no Check (the card marks itself on click), so it does not surface there."
+                    },
+                    "misconceptionId": {
+                      "type": "string",
+                      "description": "Optional id of the lesson-level misconceptions registry entry this distractor embodies — connects the registry to the option that operationalises it (analytics). Teacher-facing: never shown to the pupil; author `feedback` for that."
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "leftColumn",
+              "rightColumn"
+            ],
+            "description": "Matching payload. Marking.correctAnswer maps left item id → right item id."
+          },
+          "ordering": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "src": {
+                          "type": "string"
+                        },
+                        "srcRect": {
+                          "type": "object"
+                        },
+                        "altText": {
+                          "type": "string"
+                        },
+                        "search": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "caption": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "attribution": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": [
+                            "landscape",
+                            "portrait"
+                          ]
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "primitive": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "ref": {
+                          "type": "string",
+                          "pattern": "^(?:([a-z0-9]+(?:-[a-z0-9]+)*)\\/([a-z0-9]+(?:-[a-z0-9]+)*)@(\\d+)|user:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))$",
+                          "description": "Pinned model reference — `family/name@version`, e.g. \"graphing/coordinate-grid@1\" (or a user-lane `user:<id>` ref from the model workshop)."
+                        },
+                        "params": {
+                          "type": "object",
+                          "description": "Parameters for the model, matching its published interface. Validated at write time — invalid params are rejected with the failing paths so you can correct and retry."
+                        },
+                        "altText": {
+                          "type": "string",
+                          "description": "Agent-authored description of what the rendered model shows, written from the params. Lead with kind: \"Coordinate grid showing points A (3,2) and B (7,5)\", \"Area model for (x+3)(x+2)\". Required — it is the accessibility text, the search surface, and the fallback if the model cannot render."
+                        },
+                        "caption": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "description": "Optional figure caption — a tiptap richText doc shown as a small line directly below the model. Use for a gloss that adds teaching value (\"Figure 2: the region x + y < 4\"), not to restate what altText already says. A figure's caption belongs here, on the model — never on a separate tile."
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        },
+                        "steps": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                                "description": "Kebab-case stage name, e.g. \"rays-on\", \"image-appears\"."
+                              },
+                              "params": {
+                                "type": "object",
+                                "description": "FULL paramset for this stage (not a patch) — validated against the model interface exactly like the base params. Keep axes/ranges identical to the base so the figure never jumps between stages."
+                              },
+                              "altText": {
+                                "type": "string",
+                                "description": "Optional per-stage accessibility text describing what changed. Falls back to the slot altText."
+                              },
+                              "revealAt": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "description": "Answer-synced staging only (a model on a QUESTION, e.g. a marked tile's figure). The answer-reveal BEAT (1-based: 1 = the first \"next\" press, 2 = the second, …) at which this figure stage activates — peg it to whichever beat reveals the matching part of the answer (e.g. the beat that fills the last gap, or reveals the correct option). Between pegs the figure holds. Omit `revealAt` on all steps for the default: the figure completes on the FINAL reveal."
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "params"
+                            ]
+                          },
+                          "description": "Optional staged progression of the SAME figure: each entry is a complete paramset reached sequentially after the base params (stage 0). On a MODEL tile, the beat timeline advances the figure: a beat op { tile, op: \"stage\", stage: n } jumps the model to steps[n] (occlusion release is a stage whose params un-occlude). On a question, the stages advance in sync with the ANSWER reveal — the same \"next\" that reveals the answer also advances the figure; peg each stage to a beat with `revealAt`, or omit it everywhere for the default (the figure completes on the final reveal). Never combined with draggable params. Use when the construction ACCUMULATES (same axes, same shape, things added or moved), not for unrelated figures."
+                        }
+                      },
+                      "required": [
+                        "ref",
+                        "params",
+                        "altText"
+                      ],
+                      "description": "Optional computed-model slot — renders a parameterised, versioned visual from the model library. A peer of `image`: same envelope position, but the model is generated from `params` rather than bound to an asset."
+                    },
+                    "shapeCluster": {
+                      "type": "object"
+                    },
+                    "feedback": {
+                      "$ref": "#/$defs/richTextDoc",
+                      "description": "Optional per-item feedback shown after Check when the pupil selected this item — on a distractor, why it tempts and where it goes wrong; on the right answer, brief reinforcement. Distractor pedagogy, not the worked solution (that is the block's explanation). Single-select and True/False have no Check (the card marks itself on click), so it does not surface there."
+                    },
+                    "misconceptionId": {
+                      "type": "string",
+                      "description": "Optional id of the lesson-level misconceptions registry entry this distractor embodies — connects the registry to the option that operationalises it (analytics). Teacher-facing: never shown to the pupil; author `feedback` for that."
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "items"
+            ],
+            "description": "Ordering payload. Marking.correctAnswer is the item ids in correct sequence."
+          },
+          "gaps": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "blanks": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "input": {
+                      "type": "string",
+                      "enum": [
+                        "math"
+                      ],
+                      "description": "math: this blank is a math field (MathLive keyboard) and its key is an accepted set of LaTeX forms matched structurally — cosmetic notation folds (\\times/\\cdot, braces, \\frac vs /), a different mathematical form does not. REQUIRED whenever the answer is mathematical notation: π forms (300\\pi), powers (3x^2), surds (\\frac{\\sqrt{2}}{2}), rearranged formulae. Omit for plain typed input."
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              },
+              "template": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "text"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "blank": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "blank"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "description": "The cloze. Author a plain string with ___ runs or {{blankId}} markers; stored as the tokenised [{text}|{blank}] array."
+              },
+              "wordBank": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "blanks",
+              "template"
+            ],
+            "description": "Gap-fill payload. A blank whose answer is mathematical notation (π forms, powers, surds, rearranged formulae) MUST declare input: 'math' — the pupil answers on the math keyboard and the key is an accepted set of LaTeX forms matched structurally (never a plain typed blank, never numeric equivalence). Marking.correctAnswer: blank id → string, accepted-strings array, a set key { members: [{ variants: [form, …] } | { tuple: [[form, …], …] }], multiset?: true, choose?: K } when the answer is a collection typed into one blank (both roots, list the factors, solution pairs; choose K = \"any K of these\") — every member (or any K) matched one-to-one, any order, no extras/duplicates; a tuple member is order-bearing inside and typed parenthesised — or a precision key { values: [form, …], dp | sf } when the written precision is assessed (\"to 2 dp\"). Cross-blank constraints (either-order roots, distinct answers) go in marking.groups."
+          },
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "cols": {
+                "type": "integer",
+                "minimum": 2,
+                "maximum": 6,
+                "description": "Force a column count; omit to auto-balance."
+              },
+              "numbered": {
+                "type": "boolean"
+              },
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "src": {
+                          "type": "string"
+                        },
+                        "srcRect": {
+                          "type": "object"
+                        },
+                        "altText": {
+                          "type": "string"
+                        },
+                        "search": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "caption": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "attribution": {
+                          "$ref": "#/$defs/richTextDoc"
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": [
+                            "landscape",
+                            "portrait"
+                          ]
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "primitive": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "ref": {
+                          "type": "string",
+                          "pattern": "^(?:([a-z0-9]+(?:-[a-z0-9]+)*)\\/([a-z0-9]+(?:-[a-z0-9]+)*)@(\\d+)|user:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))$",
+                          "description": "Pinned model reference — `family/name@version`, e.g. \"graphing/coordinate-grid@1\" (or a user-lane `user:<id>` ref from the model workshop)."
+                        },
+                        "params": {
+                          "type": "object",
+                          "description": "Parameters for the model, matching its published interface. Validated at write time — invalid params are rejected with the failing paths so you can correct and retry."
+                        },
+                        "altText": {
+                          "type": "string",
+                          "description": "Agent-authored description of what the rendered model shows, written from the params. Lead with kind: \"Coordinate grid showing points A (3,2) and B (7,5)\", \"Area model for (x+3)(x+2)\". Required — it is the accessibility text, the search surface, and the fallback if the model cannot render."
+                        },
+                        "caption": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "description": "Optional figure caption — a tiptap richText doc shown as a small line directly below the model. Use for a gloss that adds teaching value (\"Figure 2: the region x + y < 4\"), not to restate what altText already says. A figure's caption belongs here, on the model — never on a separate tile."
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "slideWidth": {
+                          "type": "number"
+                        },
+                        "steps": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                                "description": "Kebab-case stage name, e.g. \"rays-on\", \"image-appears\"."
+                              },
+                              "params": {
+                                "type": "object",
+                                "description": "FULL paramset for this stage (not a patch) — validated against the model interface exactly like the base params. Keep axes/ranges identical to the base so the figure never jumps between stages."
+                              },
+                              "altText": {
+                                "type": "string",
+                                "description": "Optional per-stage accessibility text describing what changed. Falls back to the slot altText."
+                              },
+                              "revealAt": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "description": "Answer-synced staging only (a model on a QUESTION, e.g. a marked tile's figure). The answer-reveal BEAT (1-based: 1 = the first \"next\" press, 2 = the second, …) at which this figure stage activates — peg it to whichever beat reveals the matching part of the answer (e.g. the beat that fills the last gap, or reveals the correct option). Between pegs the figure holds. Omit `revealAt` on all steps for the default: the figure completes on the FINAL reveal."
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "params"
+                            ]
+                          },
+                          "description": "Optional staged progression of the SAME figure: each entry is a complete paramset reached sequentially after the base params (stage 0). On a MODEL tile, the beat timeline advances the figure: a beat op { tile, op: \"stage\", stage: n } jumps the model to steps[n] (occlusion release is a stage whose params un-occlude). On a question, the stages advance in sync with the ANSWER reveal — the same \"next\" that reveals the answer also advances the figure; peg each stage to a beat with `revealAt`, or omit it everywhere for the default (the figure completes on the final reveal). Never combined with draggable params. Use when the construction ACCUMULATES (same axes, same shape, things added or moved), not for unrelated figures."
+                        }
+                      },
+                      "required": [
+                        "ref",
+                        "params",
+                        "altText"
+                      ],
+                      "description": "Optional computed-model slot — renders a parameterised, versioned visual from the model library. A peer of `image`: same envelope position, but the model is generated from `params` rather than bound to an asset."
+                    },
+                    "shapeCluster": {
+                      "type": "object"
+                    },
+                    "icon": {
+                      "type": "string",
+                      "description": "FontAwesome icon accent (coexists with image)."
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "items"
+            ],
+            "description": "Uniform tile collection. Never marked. Per-item reveal via beats with an `item` sub-address."
+          },
+          "glossary": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "term": {
+                      "$ref": "#/$defs/richTextDoc"
+                    },
+                    "definition": {
+                      "$ref": "#/$defs/richTextDoc"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "items"
+            ],
+            "description": "Vocabulary list. Never marked; drives the vocab category when no question signal is present."
+          }
+        },
+        "required": [
+          "id",
+          "cell"
+        ],
+        "description": "One composed tile. Set EXACTLY ONE payload slot — the kind is derived from which is present. Content kinds: text / working / image / model / video / dialogue / table. Markable kinds (carry `marking`): options / matching / ordering / gaps / table. Collections (never marked): items / glossary.",
+        "oneOf": [
+          {
+            "required": [
+              "text"
+            ]
+          },
+          {
+            "required": [
+              "working"
+            ]
+          },
+          {
+            "required": [
+              "image"
+            ]
+          },
+          {
+            "required": [
+              "model"
+            ]
+          },
+          {
+            "required": [
+              "video"
+            ]
+          },
+          {
+            "required": [
+              "dialogue"
+            ]
+          },
+          {
+            "required": [
+              "table"
+            ]
+          },
+          {
+            "required": [
+              "options"
+            ]
+          },
+          {
+            "required": [
+              "matching"
+            ]
+          },
+          {
+            "required": [
+              "ordering"
+            ]
+          },
+          {
+            "required": [
+              "gaps"
+            ]
+          },
+          {
+            "required": [
+              "items"
+            ]
+          },
+          {
+            "required": [
+              "glossary"
+            ]
+          }
+        ]
+      }
+    },
+    "beats": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tile": {
+              "type": "string",
+              "description": "Target tile id."
+            },
+            "op": {
+              "type": "string",
+              "enum": [
+                "reveal",
+                "hide",
+                "stage"
+              ],
+              "default": "reveal",
+              "description": "reveal (default): show the target (targets of reveal start hidden). hide: remove it (swap = hide + reveal in one beat). stage: advance a model to steps[stage] (occlusion release is a stage whose params un-occlude)."
+            },
+            "turn": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Dialogue tiles: 0-based turn index. Omit to target the whole tile."
+            },
+            "paragraph": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Text tiles: 0-based paragraph index. Omit to target the whole tile."
+            },
+            "line": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Working tiles: 0-based statement-line index — lines reveal one per beat. A tile-level op (no line) reveals the rest, including the result."
+            },
+            "result": {
+              "type": "boolean",
+              "description": "Working tiles: reveal the exam-style result box on its own — pair with line ops so line 0 stays the landing hook (a tile-level \"rest\" op would hide it)."
+            },
+            "stage": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Model tiles with op \"stage\": 0-based index into model.steps (0 = first step after base params)."
+            },
+            "tableRow": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Table tiles: 0-based row of a target cell (pair with tableCol)."
+            },
+            "tableCol": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Table tiles: 0-based column of a target cell (pair with tableRow)."
+            },
+            "item": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Items tiles: 0-based index of one grid item — reveals appear one card at a time. Omit to target the whole tile. Markable kinds (options / ordering / matching) play as one tile."
+            },
+            "answer": {
+              "type": "boolean",
+              "description": "Marks this op as revealing an ANSWER rather than pacing teaching. Withheld on student-facing surfaces: quiz mode (behind Show answer) and workbook print (to the answers section). An in-sequence block with an answer-flagged op is a posed question — flag it role \"question\"."
+            }
+          },
+          "required": [
+            "tile"
+          ]
+        }
+      },
+      "description": "The reveal timeline: an ordered list of beats, each beat a set of ops that happen TOGETHER on one click. Anything targeted by a reveal op starts hidden; untargeted tiles are visible from the start. The LANDING frame (before any click) must show something — leave the first line / paragraph / item untargeted as the hook and reveal from the second unit; an empty landing reads as a broken slide. Author beats only when the pacing is the teaching (a build-up, a pose-then-resolve, a proof step); most blocks need none. Static surfaces freeze at a beat index (workbook = beat 0, answer key = final)."
+    },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ids"
+      ],
+      "properties": {
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Registry entry ids to render. Omit `projection` entirely to render the whole registry."
+        }
+      },
+      "description": "Projection-role blocks only (role \"objectives\" / \"glossary\"): optional subset filter over the registry the block renders."
+    }
+  },
+  "required": [
+    "tiles"
+  ],
+  "$defs": {
+    "richTextDoc": {
+      "description": "A TipTap rich-text document — the shape every text field carries. Full shape: tiptap-doc-schema.json.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "doc"
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/richTextNode"
+          }
+        },
+        "attrs": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "richTextNode": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attrs": {
+          "type": "object"
+        },
+        "content": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/richTextNode"
+          }
+        },
+        "marks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "attrs": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          }
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
+  }
+}

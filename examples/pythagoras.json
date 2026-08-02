@@ -1,0 +1,5238 @@
+{
+  "id": "mathsgenie-4-pythagoras",
+  "type": "resource",
+  "title": "Pythagoras",
+  "meta": {
+    "schemaVersion": "0.11",
+    "credits": "Contains questions from Maths Genie (Pythagoras, Grade 4 exam questions), © Maths Genie Limited, licensed under CC BY-SA 4.0."
+  },
+  "sequence": [
+    "sec-questions"
+  ],
+  "sections": {
+    "sec-questions": {
+      "id": "sec-questions",
+      "type": "assessment",
+      "heading": "Pythagoras",
+      "sequence": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q10",
+        "q13",
+        "q9",
+        "q11",
+        "q12",
+        "q14",
+        "attribution"
+      ]
+    }
+  },
+  "blocks": {
+    "q1": {
+      "id": "q1",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 1 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      3.6
+                    ]
+                  },
+                  {
+                    "at": [
+                      4.8,
+                      3.6
+                    ]
+                  },
+                  {
+                    "at": [
+                      4.8,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "4.8 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "3.6 cm"
+                  }
+                ]
+              },
+              "altText": "Right-angled triangle, right angle at B, AB = 4.8 cm, BC = 3.6 cm, AC unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "6"
+              },
+              "match": "tolerance",
+              "tolerance": 0.05,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 1",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q1-sol"
+      ]
+    },
+    "q1-sol": {
+      "id": "q1-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      3.6
+                    ]
+                  },
+                  {
+                    "at": [
+                      4.8,
+                      3.6
+                    ]
+                  },
+                  {
+                    "at": [
+                      4.8,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "4.8 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "3.6 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "6 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The same triangle with AC found to be 6 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "3.6^2 + 4.8^2 = AC^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC^2 = 36",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC = \\sqrt{36}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AC = 6 \\text{ cm}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q2": {
+      "id": "q2",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AB",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 2 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      6.75
+                    ]
+                  },
+                  {
+                    "at": [
+                      16.2,
+                      6.75
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "6.75 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "B"
+                    ],
+                    "label": "17.55 cm"
+                  }
+                ]
+              },
+              "altText": "Right-angled triangle, right angle at A, AC = 6.75 cm, CB = 17.55 cm, AB unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "16.2"
+              },
+              "match": "tolerance",
+              "tolerance": 0.05,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 2",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q2-sol"
+      ]
+    },
+    "q2-sol": {
+      "id": "q2-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      6.75
+                    ]
+                  },
+                  {
+                    "at": [
+                      16.2,
+                      6.75
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "6.75 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "B"
+                    ],
+                    "label": "17.55 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "16.2 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The same triangle with AB found to be 16.2 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AB^2 + 6.75^2 = 17.55^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AB^2 = 262.44",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AB = \\sqrt{262.44}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AB = 16.2 \\text{ cm}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q3": {
+      "id": "q3",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "BC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer to 1 decimal place."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 3 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      6
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": [
+                      12.649,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "6 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "14 cm"
+                  }
+                ]
+              },
+              "altText": "Right-angled triangle, right angle at B, AB = 6 cm, AC = 14 cm, BC unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "12.6"
+              },
+              "match": "tolerance",
+              "tolerance": 0.1,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 3",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q3-sol"
+      ]
+    },
+    "q3-sol": {
+      "id": "q3-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      6
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": [
+                      12.649,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "6 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "14 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "12.6 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The same triangle with BC found to be 12.6 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "BC^2 + 6^2 = 14^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "BC^2 = 160",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "BC = \\sqrt{160}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "BC = 12.6 \\text{ cm (1 dp)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q4": {
+      "id": "q4",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 4 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      4.2
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": [
+                      5.6,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "4.2 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "5.6 cm"
+                  }
+                ]
+              },
+              "altText": "Right-angled triangle, right angle at B, AB = 4.2 cm, BC = 5.6 cm, AC unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "7"
+              },
+              "match": "tolerance",
+              "tolerance": 0.05,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 4",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q4-sol"
+      ]
+    },
+    "q4-sol": {
+      "id": "q4-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      4.2
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": [
+                      5.6,
+                      0
+                    ]
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "4.2 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "5.6 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "7 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The same triangle with AC found to be 7 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "4.2^2 + 5.6^2 = AC^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC^2 = 49",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC = \\sqrt{49}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AC = 7 \\text{ cm}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q5": {
+      "id": "q5",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AD",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer to 3 significant figures."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 5 is 4 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      -14,
+                      0
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      0,
+                      12.845
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      10,
+                      12.845
+                    ],
+                    "label": "D"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "A"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "14 m"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "19 m"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "D"
+                    ],
+                    "label": "10 m"
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "C",
+                      "A"
+                    ],
+                    "angles": [
+                      {
+                        "at": "A",
+                        "toward": "B",
+                        "rightAngle": true
+                      },
+                      {
+                        "at": "C",
+                        "toward": "D",
+                        "rightAngle": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "altText": "Quadrilateral split by diagonal CA into two right triangles; BA = 14 m, BC = 19 m, CD = 10 m, AD unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " m"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "16.3"
+              },
+              "match": "tolerance",
+              "tolerance": 0.1,
+              "marks": 4
+            }
+          }
+        ]
+      },
+      "heading": "Question 5",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q5-sol"
+      ]
+    },
+    "q5-sol": {
+      "id": "q5-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      -14,
+                      0
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      0,
+                      12.845
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      10,
+                      12.845
+                    ],
+                    "label": "D"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "A"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "14 m"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "19 m"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "D"
+                    ],
+                    "label": "10 m"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "D"
+                    ],
+                    "label": "16.3 m",
+                    "highlight": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "C",
+                      "A"
+                    ],
+                    "angles": [
+                      {
+                        "at": "A",
+                        "toward": "B",
+                        "rightAngle": true
+                      },
+                      {
+                        "at": "C",
+                        "toward": "D",
+                        "rightAngle": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "altText": "The same figure with AD found to be 16.3 m."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "14^2 + CA^2 = 19^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "CA^2 = 165",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "10^2 + CA^2 = AD^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AD^2 = 265",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AD = \\sqrt{265}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AD = 16.3 \\text{ m (3 s.f.)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 3
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 4
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q6": {
+      "id": "q6",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AB",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer to 3 significant figures."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 6 is 4 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      7,
+                      0
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      9.49,
+                      4.36
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      0,
+                      4
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "9.5 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "D"
+                    ],
+                    "label": "4 cm"
+                  },
+                  {
+                    "between": [
+                      "D",
+                      "A"
+                    ],
+                    "label": "7 cm"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "D",
+                    "rightAngle": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "angles": [
+                      {
+                        "at": "A",
+                        "toward": "B",
+                        "rightAngle": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "altText": "Quadrilateral split by diagonal AC into two right triangles; BC = 9.5 cm, CD = 4 cm, DA = 7 cm, AB unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "5.02"
+              },
+              "match": "tolerance",
+              "tolerance": 0.05,
+              "marks": 4
+            }
+          }
+        ]
+      },
+      "heading": "Question 6",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q6-sol"
+      ]
+    },
+    "q6-sol": {
+      "id": "q6-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      7,
+                      0
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      9.49,
+                      4.36
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      0,
+                      4
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "9.5 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "D"
+                    ],
+                    "label": "4 cm"
+                  },
+                  {
+                    "between": [
+                      "D",
+                      "A"
+                    ],
+                    "label": "7 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "5.02 cm",
+                    "highlight": true
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "D",
+                    "rightAngle": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "angles": [
+                      {
+                        "at": "A",
+                        "toward": "B",
+                        "rightAngle": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "altText": "The same figure with AB found to be 5.02 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "4^2 + 7^2 = AC^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC^2 = 65",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AB^2 + AC^2 = 9.5^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AB^2 = 25.25",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AB = \\sqrt{25.25}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AB = 5.02 \\text{ cm (3 s.f.)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 3
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 4
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q7": {
+      "id": "q7",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "ABCD",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " is a rectangle."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of the diagonal "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer correct to 1 decimal place."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 7 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      8
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      17,
+                      8
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      17,
+                      0
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "17 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "8 cm"
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ]
+                  }
+                ]
+              },
+              "altText": "Rectangle ABCD, AB = 17 cm, BC = 8 cm, with the diagonal AC drawn."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "18.8"
+              },
+              "match": "tolerance",
+              "tolerance": 0.1,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 7",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q7-sol"
+      ]
+    },
+    "q7-sol": {
+      "id": "q7-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      8
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      17,
+                      8
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      17,
+                      0
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "17 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "8 cm"
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "18.8 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The rectangle with diagonal AC found to be 18.8 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "8^2 + 17^2 = AC^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC^2 = 353",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC = \\sqrt{353}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AC = 18.8 \\text{ cm (1 dp)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q8": {
+      "id": "q8",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "ABCD",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " is a trapezium."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "BC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 8 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      12
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      15,
+                      12
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      15,
+                      8
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "15 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "D"
+                    ],
+                    "label": "12 cm"
+                  },
+                  {
+                    "between": [
+                      "D",
+                      "C"
+                    ],
+                    "label": "17 cm"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "rightAngle": true
+                  },
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ]
+              },
+              "altText": "Right-angled trapezium ABCD, right angles at A and B, AB = 15 cm, AD = 12 cm, DC = 17 cm, BC unknown."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "4"
+              },
+              "match": "tolerance",
+              "tolerance": 0.05,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 8",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q8-sol"
+      ]
+    },
+    "q8-sol": {
+      "id": "q8-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      12
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      15,
+                      12
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      15,
+                      8
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "15 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "D"
+                    ],
+                    "label": "12 cm"
+                  },
+                  {
+                    "between": [
+                      "D",
+                      "C"
+                    ],
+                    "label": "17 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "4 cm",
+                    "highlight": true
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "rightAngle": true
+                  },
+                  {
+                    "at": "B",
+                    "rightAngle": true
+                  }
+                ]
+              },
+              "altText": "The trapezium with BC found to be 4 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "h^2 + 15^2 = 17^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "h^2 = 64,\\ h = 8",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "BC = 12 - 8",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "BC = 4 \\text{ cm}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q10": {
+      "id": "q10",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "ABCD",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " is a trapezium."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "AC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer correct to 3 significant figures."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 10 is 4 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      0,
+                      3
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      12,
+                      8
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      12,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "3 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "13 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "D"
+                    ],
+                    "label": "8 cm"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "rightAngle": true
+                  },
+                  {
+                    "at": "D",
+                    "rightAngle": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ]
+                  }
+                ]
+              },
+              "altText": "Trapezium ABCD, right angles at A and D, AB = 3 cm, BC = 13 cm, CD = 8 cm, with diagonal AC drawn."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "14.4"
+              },
+              "match": "tolerance",
+              "tolerance": 0.1,
+              "marks": 4
+            }
+          }
+        ]
+      },
+      "heading": "Question 10",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q10-sol"
+      ]
+    },
+    "q10-sol": {
+      "id": "q10-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      0,
+                      3
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      12,
+                      8
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      12,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "3 cm"
+                  },
+                  {
+                    "between": [
+                      "B",
+                      "C"
+                    ],
+                    "label": "13 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "D"
+                    ],
+                    "label": "8 cm"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "rightAngle": true
+                  },
+                  {
+                    "at": "D",
+                    "rightAngle": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "label": "14.4 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The trapezium with diagonal AC found to be 14.4 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AD^2 + 5^2 = 13^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AD^2 = 144,\\ AD = 12",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "8^2 + 12^2 = AC^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC^2 = 208",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "AC = \\sqrt{208}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "AC = 14.4 \\text{ cm (3 s.f.)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 3
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 4
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q13": {
+      "id": "q13",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "ABCD",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " is a square."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The diagonal of the square is 8 m."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the perimeter of the square."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer correct to one decimal place."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 13 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      5.657
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      5.657,
+                      5.657
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      5.657,
+                      0
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "C",
+                    "rightAngle": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "B",
+                      "D"
+                    ],
+                    "label": "8 m"
+                  }
+                ]
+              },
+              "altText": "Square ABCD with diagonal BD = 8 m, right angle marked at C."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " m"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "22.6"
+              },
+              "match": "tolerance",
+              "tolerance": 0.1,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 13",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q13-sol"
+      ]
+    },
+    "q13-sol": {
+      "id": "q13-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 5
+            },
+            "model": {
+              "ref": "geometry/quadrilateral@2",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      0,
+                      5.657
+                    ],
+                    "label": "A"
+                  },
+                  {
+                    "at": [
+                      5.657,
+                      5.657
+                    ],
+                    "label": "B"
+                  },
+                  {
+                    "at": [
+                      5.657,
+                      0
+                    ],
+                    "label": "C"
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ],
+                    "label": "D"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "C",
+                    "rightAngle": true
+                  }
+                ],
+                "diagonals": [
+                  {
+                    "between": [
+                      "B",
+                      "D"
+                    ],
+                    "label": "8 m"
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "5.66 m",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The square with side 5.66 m, perimeter 22.6 m."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 5
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x^2 + x^2 = 8^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "2x^2 = 64,\\ x = \\sqrt{32}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x = 5.657\\ldots",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "P = 4 \\times 5.657",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "P = 22.6 \\text{ m (1 dp)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 3
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q9": {
+      "id": "q9",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "ABC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " is an isosceles triangle."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the perpendicular height of "
+                  },
+                  {
+                    "type": "text",
+                    "text": "ABC",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer correct to 3 significant figures."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 9 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      4,
+                      9.165
+                    ]
+                  },
+                  {
+                    "at": [
+                      8,
+                      0
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "10 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "B"
+                    ],
+                    "label": "8 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "ticks": 1
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "ticks": 1
+                  }
+                ],
+                "cevians": [
+                  {
+                    "from": "A",
+                    "rightAngle": true,
+                    "occlude": true
+                  }
+                ]
+              },
+              "altText": "Isosceles triangle ABC, AB = 10 cm, base CB = 8 cm, perpendicular height from A to be found."
+            }
+          },
+          {
+            "id": "ans",
+            "cell": {
+              "col": 8,
+              "row": 4,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "9.17"
+              },
+              "match": "tolerance",
+              "tolerance": 0.05,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 9",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q9-sol"
+      ]
+    },
+    "q9-sol": {
+      "id": "q9-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 4
+            },
+            "model": {
+              "ref": "geometry/triangle@6",
+              "params": {
+                "vertices": [
+                  {
+                    "at": [
+                      4,
+                      9.165
+                    ]
+                  },
+                  {
+                    "at": [
+                      8,
+                      0
+                    ]
+                  },
+                  {
+                    "at": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "sides": [
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "label": "10 cm"
+                  },
+                  {
+                    "between": [
+                      "C",
+                      "B"
+                    ],
+                    "label": "8 cm"
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "C"
+                    ],
+                    "ticks": 1
+                  },
+                  {
+                    "between": [
+                      "A",
+                      "B"
+                    ],
+                    "ticks": 1
+                  }
+                ],
+                "cevians": [
+                  {
+                    "from": "A",
+                    "rightAngle": true,
+                    "occlude": false,
+                    "label": "9.17 cm",
+                    "highlight": true
+                  }
+                ]
+              },
+              "altText": "The triangle with perpendicular height 9.17 cm."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "h^2 + 4^2 = 10^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "h^2 = 84",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "h = \\sqrt{84}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "h = 9.17 \\text{ cm (3 s.f.)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q11": {
+      "id": "q11",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "A ship leaves point A and sails for 3.7 km due North."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The ship then sails for 2.4 km due East to reach point B."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the shortest distance between point A and point B."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answer correct to 1 decimal place."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 11 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "ans0",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " km"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "4.4"
+              },
+              "match": "tolerance",
+              "tolerance": 0.1,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 11",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q11-sol"
+      ]
+    },
+    "q11-sol": {
+      "id": "q11-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 8,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "2.4^2 + 3.7^2 = x^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x^2 = 19.45",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x = \\sqrt{19.45}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "x = 4.4 \\text{ km (1 dp)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q12": {
+      "id": "q12",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "A ladder reaches 2.5 m up a vertical wall."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The base of the ladder is 70 cm from the base of the wall on a horizontal ground."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Find the length of the ladder."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 12 is 4 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "ans0",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " cm"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "260"
+              },
+              "match": "tolerance",
+              "tolerance": 0.5,
+              "marks": 4
+            }
+          }
+        ]
+      },
+      "heading": "Question 12",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q12-sol"
+      ]
+    },
+    "q12-sol": {
+      "id": "q12-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 8,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "70^2 + 250^2 = x^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x^2 = 67400",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x = \\sqrt{67400}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "x = 260 \\text{ cm} = 2.6 \\text{ m (nearest cm)}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "q14": {
+      "id": "q14",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "A television has a diagonal length of 50 inches."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The ratio of the length of the television to the width of the television is 4:3"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Calculate the length and the width of the television."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give your answers correct to 1 decimal place."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "(Total for question 14 is 3 marks)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "l0",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 3,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Length"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "ans0",
+            "cell": {
+              "col": 4,
+              "row": 1,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " inches"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "40"
+              },
+              "match": "tolerance",
+              "tolerance": 0.5,
+              "marks": 3
+            }
+          },
+          {
+            "id": "l1",
+            "cell": {
+              "col": 1,
+              "row": 2,
+              "w": 3,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Width"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "ans1",
+            "cell": {
+              "col": 4,
+              "row": 2,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "blanks": [
+                {
+                  "id": "b1"
+                }
+              ],
+              "template": [
+                {
+                  "blank": "b1"
+                },
+                {
+                  "text": " inches"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b1": "30"
+              },
+              "match": "tolerance",
+              "tolerance": 0.5,
+              "marks": 3
+            }
+          }
+        ]
+      },
+      "heading": "Question 14",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      },
+      "explanation": [
+        "q14-sol"
+      ]
+    },
+    "q14-sol": {
+      "id": "q14-sol",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 8,
+              "h": 4
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(3x)^2 + (4x)^2 = 50^2",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "25x^2 = 2500",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x^2 = 100,\\ x = 10",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "result": {
+                "lines": [
+                  "\\text{Length } = 40, \\text{ Width } = 30 \\text{ inches}"
+                ]
+              }
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 0
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution",
+      "meta": {
+        "attribution": {
+          "source": "Maths Genie",
+          "work": "Pythagoras (Grade 4 exam questions)",
+          "sourceUrl": "https://old.mathsgenie.co.uk/gcse.php",
+          "author": "Maths Genie Limited",
+          "licence": "CC-BY-SA-4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "restructured into an interactive lesson; figures redrawn as coded models; answers keyed for auto-marking"
+        }
+      }
+    },
+    "attribution": {
+      "id": "attribution",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "t",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Adapted from Maths Genie — Pythagoras (Grade 4 exam questions), https://old.mathsgenie.co.uk/gcse.php. © Maths Genie Limited."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Changes: restructured into an interactive lesson; figures redrawn as coded geometry models; answers keyed for auto-marking. This derived lesson is likewise licensed under CC BY-SA 4.0."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "objectives": [],
+  "keywords": [],
+  "misconceptions": [],
+  "assumedKnowledge": []
+}

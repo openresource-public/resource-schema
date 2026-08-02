@@ -1,0 +1,3420 @@
+{
+  "id": "mathsgenie-7-trig-and-exponential-graphs",
+  "type": "resource",
+  "title": "Trigonometric and Exponential Graphs",
+  "meta": {
+    "schemaVersion": "0.11",
+    "credits": "Contains questions from Maths Genie (Trig and Exponential Graphs, Grade 7 exam questions), © Maths Genie Limited, licensed under CC BY-SA 4.0."
+  },
+  "sequence": [
+    "sec-questions"
+  ],
+  "sections": {
+    "sec-questions": {
+      "id": "sec-questions",
+      "type": "assessment",
+      "heading": "Trigonometric and Exponential Graphs",
+      "sequence": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q5b",
+        "q6",
+        "q7",
+        "q8",
+        "q9"
+      ]
+    }
+  },
+  "blocks": {
+    "q1": {
+      "id": "q1",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Sketch the graph of "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = \\sin x^{\\circ}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " for "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "0 \\le x \\le 360",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 5
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "plotCurve": {
+                  "fn": "sin(x)",
+                  "xs": [
+                    0,
+                    90,
+                    180,
+                    270,
+                    360
+                  ]
+                }
+              },
+              "altText": "Diagram of blank axes with the x-axis labelled 0, 90, 180, 270, 360 degrees, for sketching y = sin x."
+            },
+            "responseMode": "plot-curve",
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "derived": true
+              },
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 1",
+      "role": "question",
+      "explanation": [
+        "q1-sol"
+      ]
+    },
+    "q1-sol": {
+      "id": "q1-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "sin(x)",
+                    "label": "y = sin x°",
+                    "highlight": false
+                  }
+                ]
+              },
+              "altText": "Diagram of the completed graph of y = sin x for 0 to 360 degrees.",
+              "steps": [
+                {
+                  "id": "s0",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        0,
+                        360
+                      ],
+                      "y": [
+                        -1.5,
+                        1.5
+                      ],
+                      "xStep": 90,
+                      "yStep": 1,
+                      "degrees": true
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "sin(x)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 12,
+              "h": 2
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Plot the key points and join them with a smooth curve."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(0,0),\\ (90,1),\\ (180,0),\\ (270,-1),\\ (360,0)",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 0
+            },
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q2": {
+      "id": "q2",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Sketch the graph of "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = \\tan x^{\\circ}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " for "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "0 \\le x \\le 360",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 5
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "plotCurve": {
+                  "fn": "tan(x)",
+                  "xs": [
+                    0,
+                    45,
+                    135,
+                    180,
+                    225,
+                    315,
+                    360
+                  ]
+                }
+              },
+              "altText": "Diagram of blank axes with the x-axis labelled 0, 90, 180, 270, 360 degrees, for sketching y = tan x."
+            },
+            "responseMode": "plot-curve",
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "derived": true
+              },
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 2",
+      "role": "question",
+      "explanation": [
+        "q2-sol"
+      ]
+    },
+    "q2-sol": {
+      "id": "q2-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -6,
+                    6
+                  ],
+                  "xStep": 90,
+                  "yStep": 2,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "tan(x)",
+                    "label": "y = tan x°",
+                    "highlight": false
+                  }
+                ]
+              },
+              "altText": "Diagram of the completed graph of y = tan x for 0 to 360 degrees.",
+              "steps": [
+                {
+                  "id": "s0",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        0,
+                        360
+                      ],
+                      "y": [
+                        -6,
+                        6
+                      ],
+                      "xStep": 90,
+                      "yStep": 2,
+                      "degrees": true
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "tan(x)"
+                      }
+                    ],
+                    "features": [
+                      {
+                        "type": "asymptote"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 12,
+              "h": 2
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Plot the key points and join each branch with a smooth curve — the curve never crosses the asymptotes."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(0,0),\\ (45,1),\\ (135,-1),\\ (180,0),\\ (225,1),\\ (315,-1),\\ (360,0)",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "\\text{asymptotes at } x = 90 \\text{ and } x = 270",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 0
+            },
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q3": {
+      "id": "q3",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Sketch the graph of "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = \\cos x^{\\circ}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " for "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "0 \\le x \\le 360",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 5
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "plotCurve": {
+                  "fn": "cos(x)",
+                  "xs": [
+                    0,
+                    90,
+                    180,
+                    270,
+                    360
+                  ]
+                }
+              },
+              "altText": "Diagram of blank axes with the x-axis labelled 0, 90, 180, 270, 360 degrees, for sketching y = cos x."
+            },
+            "responseMode": "plot-curve",
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "derived": true
+              },
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 3",
+      "role": "question",
+      "explanation": [
+        "q3-sol"
+      ]
+    },
+    "q3-sol": {
+      "id": "q3-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "cos(x)",
+                    "label": "y = cos x°",
+                    "highlight": false
+                  }
+                ]
+              },
+              "altText": "Diagram of the completed graph of y = cos x for 0 to 360 degrees.",
+              "steps": [
+                {
+                  "id": "s0",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        0,
+                        360
+                      ],
+                      "y": [
+                        -1.5,
+                        1.5
+                      ],
+                      "xStep": 90,
+                      "yStep": 1,
+                      "degrees": true
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "cos(x)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 12,
+              "h": 2
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Plot the key points and join them with a smooth curve."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(0,1),\\ (90,0),\\ (180,-1),\\ (270,0),\\ (360,1)",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 0
+            },
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q4": {
+      "id": "q4",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "On the grid, sketch the curve with equation "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = 2^{x}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give the coordinates of any points of intersection with the axes."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    -3,
+                    3
+                  ],
+                  "y": [
+                    -1,
+                    8
+                  ],
+                  "xStep": 1,
+                  "yStep": 1
+                },
+                "grid": true,
+                "plotCurve": {
+                  "fn": "2^x",
+                  "xs": [
+                    -3,
+                    -2,
+                    -1,
+                    0,
+                    1,
+                    2,
+                    3
+                  ]
+                }
+              },
+              "altText": "Diagram of blank four-quadrant axes with the origin O marked, for sketching y = 2 to the power x."
+            },
+            "responseMode": "plot-curve",
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "derived": true
+              },
+              "marks": 1
+            }
+          },
+          {
+            "id": "pcoord",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Coordinates of intersection with the axes:"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "gcoord",
+            "cell": {
+              "col": 8,
+              "row": 3,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "text": "( "
+                },
+                {
+                  "blank": "x"
+                },
+                {
+                  "text": " , "
+                },
+                {
+                  "blank": "y"
+                },
+                {
+                  "text": " )"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "x"
+                },
+                {
+                  "id": "y"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "x": "0",
+                "y": "1"
+              },
+              "match": "tolerance",
+              "tolerance": 0.25,
+              "marks": 1
+            }
+          }
+        ]
+      },
+      "heading": "Question 4",
+      "role": "question",
+      "explanation": [
+        "q4-sol"
+      ]
+    },
+    "q4-sol": {
+      "id": "q4-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    -3,
+                    3
+                  ],
+                  "y": [
+                    -1,
+                    8
+                  ],
+                  "xStep": 1,
+                  "yStep": 1
+                },
+                "grid": true
+              },
+              "altText": "Diagram of y = 2 to the power x with its y-intercept (0, 1) marked.",
+              "steps": [
+                {
+                  "id": "s0",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        -3,
+                        3
+                      ],
+                      "y": [
+                        -1,
+                        8
+                      ],
+                      "xStep": 1,
+                      "yStep": 1
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "2^x"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "s1",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        -3,
+                        3
+                      ],
+                      "y": [
+                        -1,
+                        8
+                      ],
+                      "xStep": 1,
+                      "yStep": 1
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "2^x"
+                      }
+                    ],
+                    "points": [
+                      {
+                        "x": 0,
+                        "highlight": true,
+                        "guides": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "y = 2^{x}",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": " is always positive and rises steeply."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "It never meets the "
+                          },
+                          {
+                            "type": "text",
+                            "text": "x",
+                            "marks": [
+                              {
+                                "type": "italic"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "-axis (as "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x \\to -\\infty,\\ y \\to 0",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ")."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "It meets the "
+                          },
+                          {
+                            "type": "text",
+                            "text": "y",
+                            "marks": [
+                              {
+                                "type": "italic"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "-axis at "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(0,\\ 2^{0}) = (0,\\ 1)",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 0
+            },
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 1
+            },
+            {
+              "tile": "w",
+              "line": 2,
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q5": {
+      "id": "q5",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Here are four graphs."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fg-A",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 3
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    -5,
+                    5
+                  ],
+                  "y": [
+                    -5,
+                    5
+                  ],
+                  "xStep": 5,
+                  "yStep": 5
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "sin(x)"
+                  }
+                ],
+                "header": "A"
+              },
+              "altText": "Sketch graph A: a sine wave through the origin."
+            }
+          },
+          {
+            "id": "fg-B",
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 3
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    -5,
+                    5
+                  ],
+                  "y": [
+                    -5,
+                    5
+                  ],
+                  "xStep": 5,
+                  "yStep": 5
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "x^3"
+                  }
+                ],
+                "header": "B"
+              },
+              "altText": "Sketch graph B: a cubic curve y = x cubed through the origin."
+            }
+          },
+          {
+            "id": "fg-C",
+            "cell": {
+              "col": 1,
+              "row": 4,
+              "w": 6,
+              "h": 3
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    -5,
+                    5
+                  ],
+                  "y": [
+                    -5,
+                    5
+                  ],
+                  "xStep": 5,
+                  "yStep": 5
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "2^x"
+                  }
+                ],
+                "header": "C"
+              },
+              "altText": "Sketch graph C: an increasing exponential curve, always positive."
+            }
+          },
+          {
+            "id": "fg-D",
+            "cell": {
+              "col": 7,
+              "row": 4,
+              "w": 6,
+              "h": 3
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    -5,
+                    5
+                  ],
+                  "y": [
+                    -5,
+                    5
+                  ],
+                  "xStep": 5,
+                  "yStep": 5
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "cos(x)"
+                  }
+                ],
+                "header": "D"
+              },
+              "altText": "Sketch graph D: a cosine wave with a maximum on the y-axis."
+            }
+          }
+        ]
+      },
+      "heading": "Question 5",
+      "question": "q5",
+      "role": "question"
+    },
+    "q5b": {
+      "id": "q5b",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "lead",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Match each equation with the letter of its graph."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "match",
+            "cell": {
+              "col": 1,
+              "row": 2,
+              "w": 12,
+              "h": 5
+            },
+            "matching": {
+              "variant": "pairs",
+              "leftColumn": [
+                {
+                  "id": "e_sin",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "y = \\sin x",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "e_exp",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "y = 2^{x}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "e_cube",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "y = x^{3}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "e_cos",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "y = \\cos x",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "rightColumn": [
+                {
+                  "id": "r_A",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "A"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "r_B",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "B"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "r_C",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "C"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "r_D",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "D"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "e_sin": "r_A",
+                "e_exp": "r_C",
+                "e_cube": "r_B",
+                "e_cos": "r_D"
+              },
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 5",
+      "question": "q5",
+      "role": "question"
+    },
+    "q6": {
+      "id": "q6",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Here is a sketch of the curve "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = \\sin x^{\\circ}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " for "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "0 \\le x \\le 360",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Given that "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "\\sin 30^{\\circ} = \\tfrac{1}{2}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", write down the value of:"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "sin(x)"
+                  }
+                ]
+              },
+              "altText": "Diagram of y = sin x for 0 to 360 degrees: up to (90, 1), down through (180, 0) to (270, -1), back to (360, 0)."
+            }
+          },
+          {
+            "id": "pi",
+            "part": "i",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 4,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "\\sin 150^{\\circ}",
+                        "display": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "gi",
+            "part": "i",
+            "cell": {
+              "col": 5,
+              "row": 5,
+              "w": 8,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "blank": "b0"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "b0"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b0": "1/2"
+              },
+              "match": "value",
+              "marks": 1
+            }
+          },
+          {
+            "id": "pii",
+            "part": "ii",
+            "cell": {
+              "col": 1,
+              "row": 6,
+              "w": 4,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "\\sin 330^{\\circ}",
+                        "display": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "gii",
+            "part": "ii",
+            "cell": {
+              "col": 5,
+              "row": 6,
+              "w": 8,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "blank": "b0"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "b0"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b0": "-1/2"
+              },
+              "match": "value",
+              "marks": 1
+            }
+          }
+        ]
+      },
+      "heading": "Question 6",
+      "role": "question",
+      "explanation": [
+        "q6-sol"
+      ]
+    },
+    "q6-sol": {
+      "id": "q6-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 3
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1.5,
+                    1.5
+                  ],
+                  "xStep": 90,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "sin(x)"
+                  }
+                ]
+              },
+              "altText": "Diagram of y = sin x showing the symmetry used to read off sin 150 and sin 330."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 4,
+              "w": 12,
+              "h": 3
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Use the symmetry of the sine curve."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "\\sin 150^{\\circ} = \\sin(180^{\\circ} - 30^{\\circ}) = \\sin 30^{\\circ} = \\tfrac{1}{2}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "\\sin 330^{\\circ} = -\\sin 30^{\\circ} = -\\tfrac{1}{2}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 1,
+              "answer": true
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2,
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q7": {
+      "id": "q7",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Here is a sketch of the curve "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = \\cos x^{\\circ}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " for "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "0 \\le x \\le 360",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Use the graph to find estimates of the solutions, in the interval "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "0 \\le x \\le 360",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", of the equation:"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1,
+                    1
+                  ],
+                  "xStep": 60,
+                  "yStep": 0.5,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "cos(x)"
+                  }
+                ]
+              },
+              "altText": "Diagram of y = cos x on a numbered grid from 0 to 360 degrees."
+            }
+          },
+          {
+            "id": "pi",
+            "part": "i",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 4,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "\\cos x = -0.4",
+                        "display": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "gi",
+            "part": "i",
+            "cell": {
+              "col": 5,
+              "row": 5,
+              "w": 8,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "blank": "b0"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "b0"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b0": {
+                  "members": [
+                    {
+                      "variants": [
+                        "114"
+                      ]
+                    },
+                    {
+                      "variants": [
+                        "246"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "match": "tolerance",
+              "tolerance": 6,
+              "marks": 2
+            }
+          },
+          {
+            "id": "pii",
+            "part": "ii",
+            "cell": {
+              "col": 1,
+              "row": 6,
+              "w": 4,
+              "h": 1
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "4\\cos x = 3",
+                        "display": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "gii",
+            "part": "ii",
+            "cell": {
+              "col": 5,
+              "row": 6,
+              "w": 8,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "blank": "b0"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "b0"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b0": {
+                  "members": [
+                    {
+                      "variants": [
+                        "36"
+                      ]
+                    },
+                    {
+                      "variants": [
+                        "324"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "match": "tolerance",
+              "tolerance": 8,
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 7",
+      "role": "question",
+      "explanation": [
+        "q7-sol"
+      ]
+    },
+    "q7-sol": {
+      "id": "q7-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    360
+                  ],
+                  "y": [
+                    -1,
+                    1
+                  ],
+                  "xStep": 60,
+                  "yStep": 0.5,
+                  "degrees": true
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "cos(x)"
+                  }
+                ]
+              },
+              "altText": "Diagram of y = cos x with the lines y = -0.4 and y = 0.75 and their intersections marked.",
+              "steps": [
+                {
+                  "id": "s0",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        0,
+                        360
+                      ],
+                      "y": [
+                        -1,
+                        1
+                      ],
+                      "xStep": 60,
+                      "yStep": 0.5,
+                      "degrees": true
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "cos(x)"
+                      },
+                      {
+                        "fn": "-0.4",
+                        "label": "y = -0.4",
+                        "highlight": true
+                      }
+                    ],
+                    "features": [
+                      {
+                        "type": "intersection",
+                        "highlight": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "s1",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        0,
+                        360
+                      ],
+                      "y": [
+                        -1,
+                        1
+                      ],
+                      "xStep": 60,
+                      "yStep": 0.5,
+                      "degrees": true
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "cos(x)"
+                      },
+                      {
+                        "fn": "0.75",
+                        "label": "y = 0.75",
+                        "highlight": true
+                      }
+                    ],
+                    "features": [
+                      {
+                        "type": "intersection",
+                        "highlight": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 12,
+              "h": 2
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Draw a horizontal line and read where it meets the curve."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "\\cos x = -0.4",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ":  "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x \\approx 114^{\\circ}",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": " and "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x \\approx 246^{\\circ}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "4\\cos x = 3 \\Rightarrow \\cos x = 0.75",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ":  "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x \\approx 36^{\\circ}",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": " and "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "x \\approx 324^{\\circ}",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 0
+            },
+            {
+              "tile": "w",
+              "line": 1,
+              "answer": true
+            }
+          ],
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 1
+            },
+            {
+              "tile": "w",
+              "line": 2,
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q8": {
+      "id": "q8",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This sketch shows part of the graph with equation "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "y = pq^{x}",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " where "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "p",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "q",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " are constants."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The points with coordinates "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "(0, 8)",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "(1, 18)",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "(1.5, k)",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " lie on the graph. Calculate the values of "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "p",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "q",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "k",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    2
+                  ],
+                  "y": [
+                    0,
+                    30
+                  ],
+                  "xStep": 1,
+                  "yStep": 10
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "8*2.25^x"
+                  }
+                ],
+                "points": [
+                  {
+                    "x": 0,
+                    "label": "(0, 8)"
+                  },
+                  {
+                    "x": 1,
+                    "label": "(1, 18)"
+                  },
+                  {
+                    "x": 1.5,
+                    "label": "(1.5, k)"
+                  }
+                ]
+              },
+              "altText": "Diagram of an increasing exponential curve through the points (0, 8), (1, 18) and (1.5, k)."
+            }
+          },
+          {
+            "id": "gp",
+            "part": "a",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "text": "p = "
+                },
+                {
+                  "blank": "p"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "p"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "p": "8"
+              },
+              "match": "value",
+              "marks": 2
+            }
+          },
+          {
+            "id": "gq",
+            "part": "b",
+            "cell": {
+              "col": 8,
+              "row": 3,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "text": "q = "
+                },
+                {
+                  "blank": "q"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "q"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "q": "9/4"
+              },
+              "match": "value",
+              "marks": 2
+            }
+          },
+          {
+            "id": "gk",
+            "part": "c",
+            "cell": {
+              "col": 8,
+              "row": 5,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "text": "k = "
+                },
+                {
+                  "blank": "k"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "k"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "k": "27"
+              },
+              "match": "value",
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 8",
+      "role": "question",
+      "explanation": [
+        "q8-sol"
+      ]
+    },
+    "q8-sol": {
+      "id": "q8-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    2
+                  ],
+                  "y": [
+                    0,
+                    30
+                  ],
+                  "xStep": 1,
+                  "yStep": 10
+                },
+                "grid": true,
+                "curves": [
+                  {
+                    "fn": "8*2.25^x"
+                  }
+                ],
+                "points": [
+                  {
+                    "x": 0,
+                    "label": "(0, 8)"
+                  },
+                  {
+                    "x": 1,
+                    "label": "(1, 18)"
+                  },
+                  {
+                    "x": 1.5,
+                    "label": "(1.5, k)"
+                  }
+                ]
+              },
+              "altText": "Diagram of the exponential curve through the three given points."
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 6,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Substitute each given point into "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "y = pq^{x}",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "At "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(0, 8)",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ":  "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "8 = pq^{0} = p",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ", so "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "p = 8",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "At "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(1, 18)",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ":  "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "18 = 8q",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ", so "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "q = \\tfrac{18}{8} = \\tfrac{9}{4}",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "At "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "(1.5, k)",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ":  "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "k = 8\\left(\\tfrac{9}{4}\\right)^{1.5} = 8\\left(\\tfrac{3}{2}\\right)^{3} = 8 \\times \\tfrac{27}{8} = 27",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 1,
+              "answer": true
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 2,
+              "answer": true
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 3,
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    },
+    "q9": {
+      "id": "q9",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The depth of water, "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "d",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " metres, at the entrance to a harbour is given by the formula "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "d = 5 - 4\\sin(30t)",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": ", where "
+                  },
+                  {
+                    "type": "math",
+                    "attrs": {
+                      "latex": "t",
+                      "display": false
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": " is the time in hours after midnight on one day."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    12
+                  ],
+                  "y": [
+                    0,
+                    10
+                  ],
+                  "xStep": 1,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true,
+                "plotCurve": {
+                  "fn": "5-4sin(30x)",
+                  "xs": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ]
+                }
+              },
+              "altText": "Diagram of a blank numbered grid, t-axis 0 to 12, d-axis 0 to 10, for drawing the depth graph."
+            },
+            "responseMode": "plot-curve",
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "derived": true
+              },
+              "marks": 4
+            }
+          },
+          {
+            "id": "pdraw",
+            "part": "a",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "On the axes, draw the graph of "
+                    },
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "d",
+                        "display": false
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "text": " against "
+                    },
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "t",
+                        "display": false
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "text": " for "
+                    },
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "0 \\le t \\le 12",
+                        "display": false
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "pb",
+            "part": "b",
+            "cell": {
+              "col": 8,
+              "row": 3,
+              "w": 5,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Find the two values of "
+                    },
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "t",
+                        "display": false
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "text": ", where "
+                    },
+                    {
+                      "type": "math",
+                      "attrs": {
+                        "latex": "0 \\le t \\le 24",
+                        "display": false
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "text": ", when the depth is least."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "gb",
+            "part": "b",
+            "cell": {
+              "col": 8,
+              "row": 5,
+              "w": 5,
+              "h": 1
+            },
+            "gaps": {
+              "template": [
+                {
+                  "blank": "b0"
+                }
+              ],
+              "blanks": [
+                {
+                  "id": "b0"
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "b0": {
+                  "members": [
+                    {
+                      "variants": [
+                        "3"
+                      ]
+                    },
+                    {
+                      "variants": [
+                        "15"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "match": "tolerance",
+              "tolerance": 0.5,
+              "marks": 2
+            }
+          }
+        ]
+      },
+      "heading": "Question 9",
+      "role": "question",
+      "explanation": [
+        "q9-sol"
+      ]
+    },
+    "q9-sol": {
+      "id": "q9-sol",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": {
+                  "x": [
+                    0,
+                    12
+                  ],
+                  "y": [
+                    0,
+                    10
+                  ],
+                  "xStep": 1,
+                  "yStep": 1,
+                  "degrees": true
+                },
+                "grid": true
+              },
+              "altText": "Diagram of the completed depth curve d = 5 - 4 sin(30t) for 0 to 12 hours.",
+              "steps": [
+                {
+                  "id": "s0",
+                  "params": {
+                    "axes": {
+                      "x": [
+                        0,
+                        12
+                      ],
+                      "y": [
+                        0,
+                        10
+                      ],
+                      "xStep": 1,
+                      "yStep": 1,
+                      "degrees": true
+                    },
+                    "grid": true,
+                    "curves": [
+                      {
+                        "fn": "5-4sin(30x)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "w",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "working": {
+              "lines": [
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Work out "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "d",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": " at each hour, e.g. "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "d(0)=5,\\ d(3)=1,\\ d(6)=5,\\ d(9)=9",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Plot the points and join them with a smooth curve."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The depth is least when "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "\\sin(30t) = 1",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": ", i.e. "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "30t = 90^{\\circ}, 450^{\\circ}",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                },
+                {
+                  "statement": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "t = 3",
+                              "display": false
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": " and "
+                          },
+                          {
+                            "type": "math",
+                            "attrs": {
+                              "latex": "t = 15",
+                              "display": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "align": false
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "w",
+              "line": 1
+            }
+          ],
+          [
+            {
+              "tile": "fig",
+              "op": "stage",
+              "stage": 0
+            },
+            {
+              "tile": "w",
+              "line": 2
+            }
+          ],
+          [
+            {
+              "tile": "w",
+              "line": 3,
+              "answer": true
+            }
+          ]
+        ]
+      },
+      "heading": "Worked solution"
+    }
+  }
+}

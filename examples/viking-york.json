@@ -1,0 +1,4693 @@
+{
+  "id": "how-we-know-so-much-about-viking-york",
+  "type": "resource",
+  "title": "How we know so much about Viking York",
+  "meta": {
+    "schemaVersion": "0.11",
+    "credits": "© Oak National Academy 2024. Produced in partnership with Pearson. Licensed on the Open Government Licence v3.0, except where otherwise stated. See Oak terms and conditions."
+  },
+  "sequence": [
+    "sec-intro",
+    "sec-lc1",
+    "sec-lc2",
+    "sec-summary"
+  ],
+  "sections": {
+    "sec-intro": {
+      "id": "sec-intro",
+      "type": "intro",
+      "heading": "How we know so much about Viking York",
+      "sequence": [
+        "blk-title",
+        "blk-outcome",
+        "blk-keywords-list",
+        "blk-glossary"
+      ]
+    },
+    "sec-lc1": {
+      "id": "sec-lc1",
+      "type": "learning-cycle",
+      "heading": "The artefacts of the Coppergate excavation",
+      "sequence": [
+        "blk-lc1-outline",
+        "blk-s7",
+        "blk-s8",
+        "blk-s9",
+        "blk-s10",
+        "blk-s11",
+        "blk-s12",
+        "blk-s13",
+        "blk-s14"
+      ]
+    },
+    "sec-lc2": {
+      "id": "sec-lc2",
+      "type": "learning-cycle",
+      "heading": "How do the artefacts tell us about Viking York?",
+      "sequence": [
+        "blk-lc2-outline",
+        "blk-s16",
+        "blk-s17",
+        "blk-s18",
+        "blk-s19",
+        "blk-s20",
+        "blk-s21",
+        "blk-s22",
+        "blk-s23",
+        "blk-s24",
+        "blk-s25",
+        "blk-s26",
+        "blk-s27",
+        "blk-s28",
+        "blk-s29",
+        "blk-s30"
+      ]
+    },
+    "sec-summary": {
+      "id": "sec-summary",
+      "type": "plenary",
+      "heading": "How we know so much about Viking York",
+      "sequence": [
+        "blk-summary"
+      ]
+    }
+  },
+  "blocks": {
+    "blk-title": {
+      "id": "blk-title",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "title",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 4
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "How we know so much about Viking York"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "subtitle",
+            "cell": {
+              "col": 1,
+              "row": 5,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The Vikings: how do we know so much about Viking York?"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-outcome": {
+      "id": "blk-outcome",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "outcome",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "I can explain why we know so much about Viking York by describing some of the archaeological finds from Coppergate."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-keywords-list": {
+      "id": "blk-keywords-list",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "kw",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            },
+            "items": {
+              "items": [
+                {
+                  "id": "k-excavation",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "excavation"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "k-artefact",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "artefact"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "k-trade",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "trade"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-glossary": {
+      "id": "blk-glossary",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "gloss",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            },
+            "glossary": {
+              "items": [
+                {
+                  "id": "g-excavation",
+                  "term": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "excavation"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Excavation is the process of removing earth carefully from an area to find buried remains."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "bold": false,
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "g-artefact",
+                  "term": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "artefact"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "An artefact is an object made by a human being, typically one of cultural or historical interest."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "bold": false,
+                            "color": "#000000"
+                          }
+                        }
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "bold": false,
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "g-trade",
+                  "term": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "trade"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Trade is the action of buying and selling goods and services."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "bold": false,
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-lc1-outline": {
+      "id": "blk-lc1-outline",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "How we know so much about Viking York"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "outline",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            },
+            "items": {
+              "items": [
+                {
+                  "id": "cyc1",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 2
+                        },
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The artefacts of the Coppergate excavation"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cyc2",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 2
+                        },
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "How do the artefacts tell us about Viking York?"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s7": {
+      "id": "blk-s7",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "body",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The surprising "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " discovered at Coppergate in York changed what we know about the Vikings. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "fig",
+            "cell": {
+              "col": 1,
+              "row": 3,
+              "w": 6,
+              "h": 4
+            },
+            "image": {
+              "src": "PLACEHOLDER",
+              "altText": "Photograph of the Coppergate excavation site in York, an open dig below street level.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Photo of Coppergate "
+                      },
+                      {
+                        "type": "text",
+                        "text": "excavation ",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "site"
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      },
+                      "pEndDefaults": {
+                        "color": "#000000"
+                      }
+                    }
+                  }
+                ]
+              },
+              "attribution": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "img833 jorvik excavation, daves_archive, 2017, licensed under ",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#808080"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "CC BY 2.0",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#808080"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "bullet": {
+                        "kind": "none"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "blk-s8": {
+      "id": "blk-s8",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "body",
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The Coppergate "
+                    },
+                    {
+                      "type": "text",
+                      "text": "excavation",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " unearthed around 40,000 archaeological finds. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Many of the "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "uncovered dated back to the Viking age.  "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          },
+          {
+            "id": "fig",
+            "image": {
+              "src": "PLACEHOLDER",
+              "altText": "Photograph of archaeologists excavating the Coppergate site.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Photo of archaeologists excavating Coppergate"
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      },
+                      "pEndDefaults": {
+                        "color": "#000000"
+                      }
+                    }
+                  }
+                ]
+              },
+              "attribution": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "img823 jorvik excavation, daves_archive, 2017, licensed under ",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#808080"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "CC BY 2.0",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#808080"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "bullet": {
+                        "kind": "none"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s9": {
+      "id": "blk-s9",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "What was so impressive about many of the "
+                  },
+                  {
+                    "type": "text",
+                    "text": "artefacts",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " discovered at the Coppergate "
+                  },
+                  {
+                    "type": "text",
+                    "text": "excavation",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "q",
+            "options": {
+              "variant": "single",
+              "options": [
+                {
+                  "id": "a",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "They had completely rotted away as they were organic remains."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "They were well preserved even though they were organic remains."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "c",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Only a few of the organic remains were well preserved."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": "b"
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s10": {
+      "id": "blk-s10",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "intro",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "found at Coppergate were important because they provided new evidence about how the Vikings lived in York. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "list",
+            "cell": {
+              "col": 1,
+              "row": 3,
+              "w": 12,
+              "h": 4
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " uncovered included:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "woven wattles, Roman tiles and wooden posts"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "iron knives and tools"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "wooden cups and bowls, leather and combs"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "amber, carnelian, silk and cowrie shells"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "wooden board games, ice skates, coin dies"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s11": {
+      "id": "blk-s11",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "sam",
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "sam",
+                  "name": "Sam",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Sam."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "sam",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Archaeologists carefully studied the "
+                          },
+                          {
+                            "type": "text",
+                            "text": "artefacts",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": " from Coppergate for a long time to learn about how the Vikings lived in York. "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          },
+          {
+            "id": "jacob",
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "jacob",
+                  "name": "Jacob",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Jacob."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "jacob",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "I think new discoveries can still change what archaeologists know about people from a specific time and place. "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "jacob",
+              "op": "reveal"
+            }
+          ]
+        ]
+      }
+    },
+    "blk-s12": {
+      "id": "blk-s12",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Describe why the "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " found at the Coppergate "
+                    },
+                    {
+                      "type": "text",
+                      "text": "excavation",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " were important for archaeologists finding out about Viking York. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "answer",
+            "cell": {
+              "col": 1,
+              "row": 3,
+              "w": 12,
+              "h": 4
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Your answer may have included:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " found at the Coppergate "
+                    },
+                    {
+                      "type": "text",
+                      "text": "excavation",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " were important to archaeologists because they revealed new evidence about how the Vikings lived in York. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "answer",
+              "op": "reveal",
+              "answer": true
+            }
+          ]
+        ]
+      }
+    },
+    "blk-s13": {
+      "id": "blk-s13",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "aisha",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "aisha",
+                  "name": "Aisha",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Aisha."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "aisha",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The "
+                          },
+                          {
+                            "type": "text",
+                            "text": "artefacts",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": " from Coppergate have told archaeologists all they need to know about how the Vikings lived in York. "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "  "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Based on what you have learnt about "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "discovered, is this statement accurate? "
+                    },
+                    {
+                      "type": "hardBreak"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Explain your answer."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The statement is / is not accurate because …"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s14": {
+      "id": "blk-s14",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "aisha",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "aisha",
+                  "name": "Aisha",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Aisha."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "aisha",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The "
+                          },
+                          {
+                            "type": "text",
+                            "text": "artefacts",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": " from Coppergate have told archaeologists all they need to know about how the Vikings lived in York. "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      },
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "  "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 3
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Based on what you have learnt about "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "discovered, is this statement accurate? "
+                    },
+                    {
+                      "type": "hardBreak"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Explain your answer."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "answer",
+            "cell": {
+              "col": 7,
+              "row": 4,
+              "w": 6,
+              "h": 3
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The statement is not accurate because the "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "discovered"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "revealed a lot about Viking York, but new discoveries can still change what archaeologists know."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "answer",
+              "op": "reveal",
+              "answer": true
+            }
+          ]
+        ]
+      }
+    },
+    "blk-lc2-outline": {
+      "id": "blk-lc2-outline",
+      "type": "bento",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "How we know so much about Viking York"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "outline",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            },
+            "items": {
+              "items": [
+                {
+                  "id": "cyc1",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 2
+                        },
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The artefacts of the Coppergate excavation"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cyc2",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "heading",
+                        "attrs": {
+                          "level": 2
+                        },
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "How do the artefacts tell us about Viking York?"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s16": {
+      "id": "blk-s16",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "body",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Historians are able to build a picture of the past using what they learn from "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "left",
+            "cell": {
+              "col": 1,
+              "row": 3,
+              "w": 6,
+              "h": 4
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "s1",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of a pupil."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "s1",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Thousands of "
+                          },
+                          {
+                            "type": "text",
+                            "text": "artefacts ",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "were found at Coppergate which historians can learn from. "
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "right",
+            "cell": {
+              "col": 7,
+              "row": 3,
+              "w": 6,
+              "h": 4
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "s2",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of a pupil."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "s2",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The "
+                          },
+                          {
+                            "type": "text",
+                            "text": "artefacts ",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "are evidence of how the Vikings lived."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "left",
+              "op": "reveal"
+            }
+          ],
+          [
+            {
+              "tile": "right",
+              "op": "reveal"
+            }
+          ]
+        ]
+      }
+    },
+    "blk-s17": {
+      "id": "blk-s17",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "list",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 7,
+              "h": 6
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "provide evidence of many aspects of the lives of Vikings in York:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "where they lived"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38.666666666666664,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 22
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "what activities they were "
+                    },
+                    {
+                      "type": "hardBreak"
+                    },
+                    {
+                      "type": "text",
+                      "text": "involved in"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38.666666666666664,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 22
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "what they believed in "
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38.666666666666664,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 22
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "where they traded"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38.666666666666664,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 22
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "aisha",
+            "cell": {
+              "col": 8,
+              "row": 1,
+              "w": 5,
+              "h": 6
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "aisha",
+                  "name": "Aisha",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Aisha."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "aisha",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "It’s amazing what archaeologists can learn from "
+                          },
+                          {
+                            "type": "text",
+                            "text": "artefacts",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "!"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s18": {
+      "id": "blk-s18",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "body",
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "tell us how the "
+                    },
+                    {
+                      "type": "hardBreak"
+                    },
+                    {
+                      "type": "text",
+                      "text": "York Vikings lived:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "four housing plots were discovered in rows"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "early buildings were made of woven wattles, wooden posts, a thatched roof and earth floor"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "some reused Roman tiles "
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "later buildings had a cellar "
+                    },
+                    {
+                      "type": "hardBreak"
+                    },
+                    {
+                      "type": "text",
+                      "text": "for storage"
+                    }
+                  ],
+                  "attrs": {
+                    "indent": -38,
+                    "marL": 48,
+                    "bullet": {
+                      "kind": "char",
+                      "char": "●",
+                      "font": "Lexend",
+                      "color": "#000000",
+                      "sizePts": 21
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                }
+              ]
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          },
+          {
+            "id": "fig",
+            "image": {
+              "src": "PLACEHOLDER",
+              "altText": "Photograph of a reconstructed Viking longhouse with a thatched roof and timber walls.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Reconstruction of a "
+                      },
+                      {
+                        "type": "hardBreak"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Viking building"
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      },
+                      "pEndDefaults": {
+                        "color": "#000000"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s19": {
+      "id": "blk-s19",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "What did the early buildings "
+                  },
+                  {
+                    "type": "text",
+                    "text": "not",
+                    "marks": [
+                      {
+                        "type": "textStyle",
+                        "attrs": {
+                          "color": "#037b7d"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " have?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "q",
+            "options": {
+              "variant": "single",
+              "options": [
+                {
+                  "id": "a",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "a thatched roof"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "woven wattle walls"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "c",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "a cellar"
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": "c"
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s20": {
+      "id": "blk-s20",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig-top",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 4,
+              "h": 3
+            },
+            "image": {
+              "src": "PLACEHOLDER",
+              "altText": "Illustration of iron tools similar to those found at the Coppergate excavation.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Illustration of iron tools similar to those found in the Coppergate "
+                      },
+                      {
+                        "type": "text",
+                        "text": "excavation",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "id": "fig-bot",
+            "cell": {
+              "col": 1,
+              "row": 4,
+              "w": 4,
+              "h": 3
+            },
+            "image": {
+              "src": "PLACEHOLDER",
+              "altText": "Photograph of a wooden bowl found at the Coppergate excavation.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Photo of wooden object found in the Coppergate "
+                      },
+                      {
+                        "type": "text",
+                        "text": "excavation",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      }
+                    }
+                  }
+                ]
+              },
+              "attribution": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Bottom image: Object from the exhibition We call them Vikings produced by The Swedish History Museum: Bowl, copy, Wood; The Swedish History Museum, Stockholm, 2013, ",
+                        "marks": [
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#808080"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "CC-BY 2.0",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          },
+                          {
+                            "type": "textStyle",
+                            "attrs": {
+                              "color": "#808080"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "bullet": {
+                        "kind": "none"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "id": "body",
+            "cell": {
+              "col": 5,
+              "row": 1,
+              "w": 8,
+              "h": 6
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "From these "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ","
+                    },
+                    {
+                      "type": "text",
+                      "text": " ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "historians and archaeologists have learnt some of the daily "
+                    },
+                    {
+                      "type": "text",
+                      "text": "work",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " activities that the York Vikings took part in."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s21": {
+      "id": "blk-s21",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig-top",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 4,
+              "h": 3
+            },
+            "image": {
+              "src": "PLACEHOLDER",
+              "srcRect": {
+                "l": 0,
+                "t": 0.04605,
+                "r": 0,
+                "b": 0.08331
+              },
+              "altText": "Photograph of ice skates made from bone, similar to those found at the Coppergate excavation.",
+              "attribution": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Ice pack, Ola Myrin, Historical Museum/SHM, 2019, licensed under CC BY 4.0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Photo of ice skates similar to those found at the Coppergate "
+                      },
+                      {
+                        "type": "text",
+                        "text": "excavation",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      },
+                      "pEndDefaults": {
+                        "bold": true,
+                        "color": "#000000"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "id": "fig-bot",
+            "cell": {
+              "col": 1,
+              "row": 4,
+              "w": 4,
+              "h": 3
+            },
+            "image": {
+              "src": "PLACEHOLDER",
+              "srcRect": {
+                "l": 0,
+                "t": 0.14507,
+                "r": 0,
+                "b": 0
+              },
+              "altText": "Photograph of a wooden board game similar to that found at the Coppergate excavation.",
+              "attribution": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Nefatafl fra Trondheim, Åge Hojem, NTNU Vitenskapsmuseet, 2015, licensed under CC BY 2.0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Photo of a board game similar to that found at the Coppergate "
+                      },
+                      {
+                        "type": "text",
+                        "text": "excavation",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      },
+                      "pEndDefaults": {
+                        "bold": true,
+                        "color": "#000000"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "id": "body",
+            "cell": {
+              "col": 5,
+              "row": 1,
+              "w": 8,
+              "h": 6
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "From these "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ","
+                    },
+                    {
+                      "type": "text",
+                      "text": " ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "historians and archaeologists have learnt some of the daily "
+                    },
+                    {
+                      "type": "text",
+                      "text": "leisure",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " activities that the York Vikings took part in. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    },
+                    "pEndDefaults": {
+                      "color": "#000000"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s22": {
+      "id": "blk-s22",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "laura",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "laura",
+                  "name": "Laura",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Laura."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "laura",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The Vikings were skilled craftspeople."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 3
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Explain how you know Laura is correct using what you have learnt about the "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " found. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "hint",
+            "cell": {
+              "col": 7,
+              "row": 4,
+              "w": 6,
+              "h": 3
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Include "
+                    },
+                    {
+                      "type": "text",
+                      "text": "one",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " example of an "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefact",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " that proves this."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s23": {
+      "id": "blk-s23",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "laura",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            },
+            "dialogue": {
+              "speakers": [
+                {
+                  "id": "laura",
+                  "name": "Laura",
+                  "avatar": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Illustrated portrait of Laura."
+                  }
+                }
+              ],
+              "turns": [
+                {
+                  "id": "t1",
+                  "speaker": "laura",
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "The Vikings were skilled craftspeople."
+                          }
+                        ],
+                        "attrs": {
+                          "bullet": {
+                            "kind": "none"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Explain how you know Laura is correct using what you have learnt about the "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " found. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "answer",
+            "cell": {
+              "col": 7,
+              "row": 3,
+              "w": 6,
+              "h": 4
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Your answer could include:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Laura is correct. The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        },
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " ",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "found at Coppergate are evidence that the Vikings were skilled craftspeople. For example, "
+                    },
+                    {
+                      "type": "text",
+                      "text": "iron knives",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " showed they were skilled blacksmiths. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "answer",
+              "op": "reveal",
+              "answer": true
+            }
+          ]
+        ]
+      }
+    },
+    "blk-s24": {
+      "id": "blk-s24",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "fig",
+            "image": {
+              "src": "PLACEHOLDER",
+              "altText": "Photograph of a Viking coin die similar to one found at the Coppergate excavation.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Photo of coin die"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "similar to that found at the Coppergate "
+                      },
+                      {
+                        "type": "text",
+                        "text": "excavation",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ]
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          },
+          {
+            "id": "body",
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The design of a coin die discovered at Coppergate had both Christian and pagan elements."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "From this "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefact,",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " historians have learnt what the York Vikings believed in during this time. "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            },
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s25": {
+      "id": "blk-s25",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "body",
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Many "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " found were evidence that York was a major hub for "
+                    },
+                    {
+                      "type": "text",
+                      "text": "trade",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "When amber was discovered, it showed that the Vikings traded with Scandinavia and the Baltic"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          },
+          {
+            "id": "fig",
+            "image": {
+              "src": "PLACEHOLDER",
+              "srcRect": {
+                "l": 0.0986,
+                "t": 0,
+                "r": 0.31447,
+                "b": 0
+              },
+              "altText": "Photograph of a polished piece of orange amber against a blue sky.",
+              "caption": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Amber"
+                      }
+                    ],
+                    "attrs": {
+                      "align": "ctr",
+                      "bullet": {
+                        "kind": "none"
+                      },
+                      "pEndDefaults": {
+                        "color": "#000000"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "cell": {
+              "col": 7,
+              "row": 1,
+              "w": 6,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s26": {
+      "id": "blk-s26",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "From which "
+                  },
+                  {
+                    "type": "text",
+                    "text": "artefact",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " did archaeologists learn that           Vikings in York believed in both Christianity and pagan gods?"
+                  }
+                ],
+                "attrs": {
+                  "bullet": {
+                    "kind": "none"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "q",
+            "options": {
+              "variant": "single",
+              "options": [
+                {
+                  "id": "coin",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Photograph of a Viking coin die."
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Coin die"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "amber",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "srcRect": {
+                      "l": 0.0986,
+                      "t": 0,
+                      "r": 0.31447,
+                      "b": 0
+                    },
+                    "altText": "Photograph of a piece of amber."
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Amber"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "board",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "srcRect": {
+                      "l": 0,
+                      "t": 0.14507,
+                      "r": 0,
+                      "b": 0
+                    },
+                    "altText": "Photograph of a wooden Viking board game.",
+                    "attribution": {
+                      "type": "doc",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Nefatafl fra Trondheim, Åge Hojem, NTNU Vitenskapsmuseet, 2015, licensed under CC BY 2.0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Wooden board game"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": "coin"
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s27": {
+      "id": "blk-s27",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "From which "
+                  },
+                  {
+                    "type": "text",
+                    "text": "artefact",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " did archaeologists learn that          Vikings traded across the world?"
+                  }
+                ],
+                "attrs": {
+                  "bullet": {
+                    "kind": "none"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "q",
+            "options": {
+              "variant": "single",
+              "options": [
+                {
+                  "id": "coin",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Photograph of a Viking coin die."
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Coin die"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "amber",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "srcRect": {
+                      "l": 0.0986,
+                      "t": 0,
+                      "r": 0.31447,
+                      "b": 0
+                    },
+                    "altText": "Photograph of a piece of amber."
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Amber"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "board",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "srcRect": {
+                      "l": 0,
+                      "t": 0.14507,
+                      "r": 0,
+                      "b": 0
+                    },
+                    "altText": "Photograph of a wooden Viking board game.",
+                    "attribution": {
+                      "type": "doc",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Nefatafl fra Trondheim, Åge Hojem, NTNU Vitenskapsmuseet, 2015, licensed under CC BY 2.0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Wooden board game"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": "amber"
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s28": {
+      "id": "blk-s28",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "stem": {
+          "text": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "From which "
+                  },
+                  {
+                    "type": "text",
+                    "text": "artefact",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " did archaeologists learn what         Vikings did in their leisure time?"
+                  }
+                ],
+                "attrs": {
+                  "bullet": {
+                    "kind": "none"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "tiles": [
+          {
+            "id": "q",
+            "options": {
+              "variant": "single",
+              "options": [
+                {
+                  "id": "coin",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "altText": "Photograph of a Viking coin die."
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Coin die"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "amber",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "srcRect": {
+                      "l": 0.0986,
+                      "t": 0,
+                      "r": 0.31447,
+                      "b": 0
+                    },
+                    "altText": "Photograph of a piece of amber."
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Amber"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "board",
+                  "image": {
+                    "src": "PLACEHOLDER",
+                    "srcRect": {
+                      "l": 0,
+                      "t": 0.14507,
+                      "r": 0,
+                      "b": 0
+                    },
+                    "altText": "Photograph of a wooden Viking board game.",
+                    "attribution": {
+                      "type": "doc",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Nefatafl fra Trondheim, Åge Hojem, NTNU Vitenskapsmuseet, 2015, licensed under CC BY 2.0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "Wooden board game"
+                          }
+                        ],
+                        "attrs": {
+                          "align": "ctr",
+                          "bullet": {
+                            "kind": "none"
+                          },
+                          "pEndDefaults": {
+                            "color": "#000000"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": "board"
+            },
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            }
+          }
+        ]
+      }
+    },
+    "blk-s29": {
+      "id": "blk-s29",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 6
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Write "
+                    },
+                    {
+                      "type": "text",
+                      "text": "one",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " paragraph to explain how we know so much about Viking York. "
+                    },
+                    {
+                      "type": "hardBreak"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Include examples of "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " discovered at the Coppergate "
+                    },
+                    {
+                      "type": "text",
+                      "text": "excavation",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " and what we have learnt from them. "
+                    },
+                    {
+                      "type": "hardBreak"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "You may wish to include these words in your answer:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "archaeologists   "
+                    },
+                    {
+                      "type": "text",
+                      "text": " excavation     artefacts      trade",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "blk-s30": {
+      "id": "blk-s30",
+      "type": "bento",
+      "role": "question",
+      "content": {
+        "tiles": [
+          {
+            "id": "prompt",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Write "
+                    },
+                    {
+                      "type": "text",
+                      "text": "one",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " paragraph to explain how we know so much about Viking York. Your answer could include:"
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "answer",
+            "cell": {
+              "col": 1,
+              "row": 3,
+              "w": 12,
+              "h": 4
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The Coppergate "
+                    },
+                    {
+                      "type": "text",
+                      "text": "excavation",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        },
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " unearthed 40,000 Viking "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        },
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " for "
+                    },
+                    {
+                      "type": "text",
+                      "text": "archaeologists",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " to study and learn about what life was like in Viking York. For example, "
+                    },
+                    {
+                      "type": "text",
+                      "text": "archaeologists",
+                      "marks": [
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " were able to learn that the Vikings were craftspeople, not just warriors, from the iron tools they discovered in workshops attached to Viking houses. Additionally, "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        },
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " discovered, like amber and silk, provided evidence of Viking "
+                    },
+                    {
+                      "type": "text",
+                      "text": "trade",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        },
+                        {
+                          "type": "textStyle",
+                          "attrs": {
+                            "color": "#037b7d"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " across the world. The discovery of a design on a coin die also suggested that the York Vikings believed in both Christianity and pagan gods."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [
+            {
+              "tile": "answer",
+              "op": "reveal",
+              "answer": true
+            }
+          ]
+        ]
+      }
+    },
+    "blk-summary": {
+      "id": "blk-summary",
+      "type": "bento",
+      "content": {
+        "tiles": [
+          {
+            "id": "lead",
+            "cell": {
+              "col": 1,
+              "row": 1,
+              "w": 12,
+              "h": 2
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Many "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " have been found in the Coppergate area that date from the time the Vikings lived there."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "body",
+            "cell": {
+              "col": 1,
+              "row": 3,
+              "w": 12,
+              "h": 4
+            },
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "These "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " tell us a lot about the buildings that were there and the activities that took place."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "text",
+                      "text": "artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " found are evidence that Viking York was a major hub for "
+                    },
+                    {
+                      "type": "text",
+                      "text": "trade",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " where goods came to and from all over Europe, Asia and the Middle East."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Because there were many"
+                    },
+                    {
+                      "type": "text",
+                      "text": " artefacts",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " from the Coppergate "
+                    },
+                    {
+                      "type": "text",
+                      "text": "excavation ",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "for archaeologists to learn from, we now know more about the daily lives of the Vikings who lived in York."
+                    }
+                  ],
+                  "attrs": {
+                    "bullet": {
+                      "kind": "none"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "objectives": [],
+  "keywords": [],
+  "misconceptions": [],
+  "assumedKnowledge": []
+}

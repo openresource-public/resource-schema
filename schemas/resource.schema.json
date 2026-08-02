@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openresource-public.github.io/openresource-schema/schemas/resource.schema.json",
+  "title": "resource",
+  "description": "An educational resource: a flat dictionary of blocks and sections referenced by id, a top-level sequence of section ids, and resource-level registries (objectives, keywords, misconceptions, assumed knowledge). Prose documentation: SCHEMA.md. Unknown fields anywhere in a stored resource are must-ignore, never must-understand.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "type",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "const": "resource"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/block"
+      },
+      "description": "Flat dictionary of blocks keyed by block id. A block may live here without appearing in any section sequence (explanation blocks referenced from an owning block)."
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/section"
+      },
+      "description": "Flat dictionary of sections keyed by section id."
+    },
+    "sequence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Section ids in lesson order."
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/objective"
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/keyword"
+      }
+    },
+    "misconceptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/misconception"
+      }
+    },
+    "assumedKnowledge": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assumedKnowledge"
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "description": "The schema version this resource is shaped to, e.g. \"0.11\". See VERSIONING.md."
+        },
+        "credits": {
+          "type": "string",
+          "description": "Optional human-readable provenance line for the resource as a whole. Finer-grained provenance lives per block at meta.attribution."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "block": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "type",
+        "content"
+      ],
+      "description": "The atomic content unit: a collection of tiles with an optional reveal timeline. Content shape: bento-content.schema.json / blocks/bento.md.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "const": "bento",
+          "description": "Fixed — a format discriminator, not a choice."
+        },
+        "heading": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Question-group id (e.g. \"q3\"). When one source question spans several blocks, every member block carries the SAME value and role \"question\", and the members sit contiguously in their section sequence. Surfaces treat the group as one question: one number, one summed marks total (on the last member), one answers-key entry, headings suppressed on continuation members. Omit for a single-block question."
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "question",
+            "worked-example",
+            "key-point",
+            "objectives",
+            "glossary",
+            "assumed-knowledge",
+            "misconceptions",
+            "teacher-tips"
+          ],
+          "description": "Declared pedagogical register; absent = plain content. \"question\" — a posed or auto-marked task; \"worked-example\" — a modelled solution (may carry marking, never assessed); \"key-point\" — a callout; \"objectives\" / \"glossary\" / \"assumed-knowledge\" / \"misconceptions\" / \"teacher-tips\" — tile-less blocks projecting the resource-level registries (one role per registry; content.projection.ids optionally selects a subset). A block with a marked tile or explanation refs declares \"question\" or \"worked-example\"."
+        },
+        "content": {
+          "type": "object",
+          "description": "The block content. Validate against bento-content.schema.json."
+        },
+        "explanation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Ordered block ids presenting the revealed worked answer. Each referenced block lives in `blocks` but in no section sequence, and is referenced by exactly one owning block."
+        },
+        "meta": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Optional block metadata: provenance (`attribution`) and registry tags (`objectiveIds`, `keywordIds`, `misconceptionIds` — ids into the resource-level registries this block realises).",
+          "properties": {
+            "attribution": {
+              "$ref": "#/$defs/attribution"
+            },
+            "objectiveIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "keywordIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "misconceptionIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "type",
+        "heading",
+        "sequence"
+      ],
+      "description": "One phase of a lesson. `type` is a hint, not a rule — it shapes authoring and display without changing what the content means.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "intro",
+            "retrieval",
+            "learning-cycle",
+            "activity",
+            "assessment",
+            "plenary"
+          ]
+        },
+        "heading": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sequence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Block ids making up this phase, in order."
+        }
+      }
+    },
+    "attribution": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "source",
+        "work",
+        "licence"
+      ],
+      "description": "Where a block's content came from and under what licence.",
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "The publishing site or body."
+        },
+        "work": {
+          "type": "string",
+          "description": "The specific work the content is drawn from."
+        },
+        "sourceUrl": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "licence": {
+          "type": "string",
+          "description": "Licence identifier, e.g. \"CC-BY-SA-4.0\"."
+        },
+        "licenceUrl": {
+          "type": "string"
+        },
+        "changes": {
+          "type": "string",
+          "description": "How the content was adapted."
+        }
+      }
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "$ref": "#/$defs/richTextDoc"
+        }
+      }
+    },
+    "keyword": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "term"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "term": {
+          "$ref": "#/$defs/richTextDoc"
+        },
+        "definition": {
+          "$ref": "#/$defs/richTextDoc"
+        }
+      }
+    },
+    "misconception": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "$ref": "#/$defs/richTextDoc",
+          "description": "The misconception as a pupil might state it."
+        },
+        "response": {
+          "$ref": "#/$defs/richTextDoc",
+          "description": "How to address it."
+        }
+      }
+    },
+    "assumedKnowledge": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "$ref": "#/$defs/richTextDoc"
+        }
+      }
+    },
+    "richTextDoc": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "const": "doc"
+        }
+      },
+      "description": "A TipTap rich-text document. Full shape: tiptap-doc-schema.json."
+    }
+  }
+}

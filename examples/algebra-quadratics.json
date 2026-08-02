@@ -1,0 +1,402 @@
+{
+  "id": "algebra-quadratics",
+  "type": "resource",
+  "title": "Quadratics: graphs and factorising",
+  "description": "Quadratic graphs and solving by factorising: reading the parabola, completing a table of values, and factorising to solve.",
+  "meta": {
+    "schemaVersion": "0.11",
+    "credits": "Original content, dedicated to the public domain under CC0 1.0."
+  },
+  "sequence": ["sec-graphs", "sec-factorise", "sec-apply"],
+  "sections": {
+    "sec-graphs": {
+      "id": "sec-graphs",
+      "type": "learning-cycle",
+      "heading": "Quadratic graphs",
+      "sequence": ["b-plot", "b-table", "b-turning"]
+    },
+    "sec-factorise": {
+      "id": "sec-factorise",
+      "type": "learning-cycle",
+      "heading": "Solving by factorising",
+      "sequence": ["b-match", "b-order", "b-solve"]
+    },
+    "sec-apply": {
+      "id": "sec-apply",
+      "type": "assessment",
+      "heading": "Apply it",
+      "sequence": ["b-show"]
+    }
+  },
+  "objectives": [
+    {
+      "id": "obj-graph",
+      "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Plot and interpret the graph of a quadratic function, identifying its roots, y-intercept and turning point." }] }] }
+    },
+    {
+      "id": "obj-factorise",
+      "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Solve a quadratic equation by factorising." }] }] }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "kw-parabola",
+      "term": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "parabola" }] }] },
+      "definition": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "The symmetric curve that every quadratic function makes when graphed." }] }] }
+    },
+    {
+      "id": "kw-root",
+      "term": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "root" }] }] },
+      "definition": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "A value of x at which an expression equals zero — where the graph crosses the x-axis." }] }] }
+    },
+    {
+      "id": "kw-factorise",
+      "term": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "factorise" }] }] },
+      "definition": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Write an expression as a product of its factors." }] }] }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "mis-sign",
+      "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "If (x + 2)(x − 3) = 0 then the solutions are x = 2 and x = −3." }] }] },
+      "response": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Each bracket equals zero on its own: x + 2 = 0 gives x = −2, and x − 3 = 0 gives x = 3. The sign flips when each factor is solved." }] }] }
+    }
+  ],
+  "assumedKnowledge": [],
+  "blocks": {
+    "b-plot": {
+      "id": "b-plot",
+      "type": "bento",
+      "heading": "The shape of a quadratic graph",
+      "meta": {
+        "objectiveIds": ["obj-graph"],
+        "keywordIds": ["kw-parabola", "kw-root"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "The graph of y = x² − 2x − 3 shows every feature a quadratic graph can have." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-intro",
+            "cell": { "col": 1, "row": 1, "w": 5, "h": 4 },
+            "text": {
+              "type": "doc",
+              "content": [
+                { "type": "paragraph", "content": [{ "type": "text", "text": "A quadratic function makes a symmetric curve called a parabola. The points where the curve crosses the x-axis are the roots of x² − 2x − 3 = 0." }] },
+                { "type": "paragraph", "content": [{ "type": "text", "text": "The lowest point of the curve is its turning point. The parabola is symmetric about the vertical line through it." }] }
+              ]
+            }
+          },
+          {
+            "id": "t-graph",
+            "cell": { "col": 6, "row": 1, "w": 7, "h": 4 },
+            "model": {
+              "ref": "graphing/function-graph@5",
+              "params": {
+                "axes": { "x": [-4, 5], "y": [-6, 5] },
+                "curves": [{ "fn": "x^2 - 2x - 3", "label": "y = x² − 2x − 3" }]
+              },
+              "altText": "The parabola y = x² − 2x − 3 on labelled axes, opening upwards.",
+              "steps": [
+                {
+                  "id": "mark-roots",
+                  "params": {
+                    "axes": { "x": [-4, 5], "y": [-6, 5] },
+                    "curves": [{ "fn": "x^2 - 2x - 3", "label": "y = x² − 2x − 3" }],
+                    "features": [{ "type": "root", "highlight": true, "guides": true }]
+                  },
+                  "altText": "The same parabola with its roots marked at (−1, 0) and (3, 0)."
+                },
+                {
+                  "id": "mark-all-features",
+                  "params": {
+                    "axes": { "x": [-4, 5], "y": [-6, 5] },
+                    "curves": [{ "fn": "x^2 - 2x - 3", "label": "y = x² − 2x − 3" }],
+                    "features": [
+                      { "type": "root" },
+                      { "type": "y-intercept" },
+                      { "type": "turning-point", "highlight": true, "guides": true }
+                    ]
+                  },
+                  "altText": "The same parabola with roots (−1, 0) and (3, 0), y-intercept (0, −3), and turning point (1, −4) all marked."
+                }
+              ]
+            }
+          }
+        ],
+        "beats": [
+          [{ "tile": "t-graph", "op": "stage", "stage": 0 }],
+          [
+            { "tile": "t-graph", "op": "stage", "stage": 1 },
+            { "tile": "t-intro", "op": "reveal", "paragraph": 1 }
+          ]
+        ]
+      }
+    },
+    "b-table": {
+      "id": "b-table",
+      "type": "bento",
+      "role": "question",
+      "heading": "A table of values",
+      "meta": {
+        "objectiveIds": ["obj-graph"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Complete the table of values for y = x² − 2x − 3." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-table",
+            "cell": { "col": 1, "row": 1, "w": 12, "h": 2 },
+            "table": {
+              "hasHeaderRow": true,
+              "hasHeaderCol": true,
+              "rows": [
+                {
+                  "cells": [
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "x" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "−2" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "−1" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "0" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "1" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "2" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "3" }] }] } }
+                  ]
+                },
+                {
+                  "cells": [
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "y" }] }] } },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "5" }] }] } },
+                    { "id": "y-at-neg1", "gap": true },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "−3" }] }] } },
+                    { "id": "y-at-1", "gap": true },
+                    { "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "−3" }] }] } },
+                    { "id": "y-at-3", "gap": true }
+                  ]
+                }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": { "y-at-neg1": "0", "y-at-1": "-4", "y-at-3": "0" },
+              "marks": 2
+            }
+          }
+        ]
+      }
+    },
+    "b-turning": {
+      "id": "b-turning",
+      "type": "bento",
+      "role": "question",
+      "heading": "Mark the turning point",
+      "meta": {
+        "objectiveIds": ["obj-graph"],
+        "keywordIds": ["kw-parabola"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "y = x² − 2x − 3 can be written as y = (x − 1)² − 4. Use this form to mark the turning point of the graph on the grid." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-grid",
+            "cell": { "col": 4, "row": 1, "w": 6, "h": 4 },
+            "model": {
+              "ref": "graphing/coordinate-grid@4",
+              "params": {
+                "axes": { "x": [-4, 4], "y": [-6, 3] },
+                "points": []
+              },
+              "altText": "A blank four-quadrant coordinate grid, x from −4 to 4 and y from −6 to 3, for marking the turning point."
+            },
+            "responseMode": "place-point",
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": { "x": 1, "y": -4 },
+              "tolerance": 0.5,
+              "marks": 1
+            }
+          }
+        ]
+      }
+    },
+    "b-match": {
+      "id": "b-match",
+      "type": "bento",
+      "role": "question",
+      "heading": "Match the factorised forms",
+      "meta": {
+        "objectiveIds": ["obj-factorise"],
+        "keywordIds": ["kw-factorise"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Match each quadratic expression to its factorised form." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-match",
+            "cell": { "col": 1, "row": 1, "w": 12, "h": 4 },
+            "matching": {
+              "variant": "pairs",
+              "leftColumn": [
+                { "id": "l1", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "x² + 5x + 6" }] }] } },
+                { "id": "l2", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "x² − 5x + 6" }] }] } },
+                { "id": "l3", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "x² + x − 6" }] }] } },
+                { "id": "l4", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "x² − x − 6" }] }] } }
+              ],
+              "rightColumn": [
+                { "id": "r1", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "(x + 2)(x + 3)" }] }] } },
+                { "id": "r2", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "(x − 2)(x − 3)" }] }] } },
+                { "id": "r3", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "(x − 2)(x + 3)" }] }] } },
+                { "id": "r4", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "(x + 2)(x − 3)" }] }] } }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": { "l1": "r1", "l2": "r2", "l3": "r3", "l4": "r4" },
+              "marks": 2
+            }
+          }
+        ]
+      }
+    },
+    "b-order": {
+      "id": "b-order",
+      "type": "bento",
+      "role": "question",
+      "heading": "The method, in order",
+      "meta": {
+        "objectiveIds": ["obj-factorise"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Put the steps for solving x² − 5x + 6 = 0 in order." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-order",
+            "cell": { "col": 1, "row": 1, "w": 12, "h": 4 },
+            "ordering": {
+              "items": [
+                { "id": "s1", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Write the equation with zero on one side: x² − 5x + 6 = 0." }] }] } },
+                { "id": "s2", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Factorise the left-hand side: (x − 2)(x − 3) = 0." }] }] } },
+                { "id": "s3", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Set each factor equal to zero." }] }] } },
+                { "id": "s4", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Solve each: x = 2 or x = 3." }] }] } },
+                { "id": "s5", "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Check both solutions by substituting back." }] }] } }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": ["s1", "s2", "s3", "s4", "s5"],
+              "marks": 1
+            }
+          }
+        ]
+      }
+    },
+    "b-solve": {
+      "id": "b-solve",
+      "type": "bento",
+      "role": "question",
+      "heading": "Solve",
+      "meta": {
+        "objectiveIds": ["obj-factorise"],
+        "misconceptionIds": ["mis-sign"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Solve each equation." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-part-a",
+            "part": "a",
+            "cell": { "col": 1, "row": 1, "w": 6, "h": 3 },
+            "gaps": {
+              "blanks": [{ "id": "roots" }],
+              "template": [
+                { "text": "x² − x − 6 = 0, so x = " },
+                { "blank": "roots" }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "correctAnswer": {
+                "roots": {
+                  "members": [
+                    { "variants": ["-2"] },
+                    { "variants": ["3"] }
+                  ]
+                }
+              },
+              "marks": 3
+            }
+          },
+          {
+            "id": "t-part-b",
+            "part": "b",
+            "cell": { "col": 7, "row": 1, "w": 6, "h": 3 },
+            "gaps": {
+              "blanks": [{ "id": "pos" }],
+              "template": [
+                { "text": "4x² = 1 and x > 0, so x = " },
+                { "blank": "pos" }
+              ]
+            },
+            "marking": {
+              "mode": "auto",
+              "match": "value",
+              "correctAnswer": { "pos": "1/2" },
+              "marks": 2
+            }
+          }
+        ]
+      }
+    },
+    "b-show": {
+      "id": "b-show",
+      "type": "bento",
+      "role": "question",
+      "heading": "Rectangle problem",
+      "meta": {
+        "objectiveIds": ["obj-factorise"]
+      },
+      "content": {
+        "stem": {
+          "text": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "A rectangle has width x cm and length (x + 3) cm. Its area is 40 cm². Show that x² + 3x − 40 = 0, and find the width of the rectangle." }] }] }
+        },
+        "tiles": [
+          {
+            "id": "t-work",
+            "cell": { "col": 1, "row": 1, "w": 12, "h": 4 },
+            "working": {
+              "lines": [
+                {
+                  "statement": { "type": "doc", "content": [{ "type": "paragraph", "content": [{ "type": "math", "attrs": { "latex": "x(x + 3) = 40", "display": false } }] }] },
+                  "align": false
+                }
+              ]
+            },
+            "marking": {
+              "mode": "rubric",
+              "scheme": {
+                "type": "criteria",
+                "criteria": [
+                  { "description": "Expands the area expression and rearranges to x² + 3x − 40 = 0.", "marks": 1 },
+                  { "description": "Factorises to (x + 8)(x − 5) = 0.", "marks": 1 },
+                  { "description": "Rejects x = −8 and states the width as 5 cm.", "marks": 1 }
+                ]
+              },
+              "marks": 3
+            },
+            "response": { "kind": "working", "lines": 8 }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openresource-public.github.io/openresource-schema/tiptap-doc-schema.json",
+  "title": "richText document",
+  "description": "TipTap (ProseMirror) JSON document. The shape every text-bearing field in the resource schema points at.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": { "type": "string", "const": "doc" },
+    "content": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "attrs": { "type": "object" }
+  },
+  "required": ["type"],
+  "$defs": {
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Node type. Canonical values: `paragraph`, `heading`, `bulletList`, `orderedList`, `listItem`, `blockquote`, `codeBlock`, `horizontalRule`, `text`, `math`, `hardBreak`, `image`. Renderers ignore unknown types."
+        },
+        "attrs": {
+          "type": "object",
+          "description": "Node-type-specific attributes. E.g. `heading.level: 1-6`, `math.latex: string` + `math.display: boolean` (false = inline, true = own centred line), `image.src: string`."
+        },
+        "content": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/node" },
+          "description": "Child nodes. Absent on leaf nodes (text, math, hardBreak, image, horizontalRule)."
+        },
+        "marks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/mark" },
+          "description": "Inline annotations on a text node."
+        },
+        "text": {
+          "type": "string",
+          "description": "Present only on text nodes."
+        }
+      },
+      "required": ["type"]
+    },
+    "mark": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mark type. Canonical values: `bold`, `italic`, `underline`, `strike`, `code`, `link`, `highlight`, `subscript`, `superscript`, `textStyle` (carries colour in `attrs.color`)."
+        },
+        "attrs": {
+          "type": "object",
+          "description": "Mark-type-specific attributes. E.g. `link.href: string`, `textStyle.color: string`."
+        }
+      },
+      "required": ["type"]
+    }
+  }
+}
