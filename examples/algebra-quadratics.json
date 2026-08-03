@@ -92,7 +92,7 @@
             "id": "t-graph",
             "cell": { "col": 6, "row": 1, "w": 7, "h": 4 },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": { "x": [-4, 5], "y": [-6, 5] },
                 "curves": [{ "fn": "x^2 - 2x - 3", "label": "y = x² − 2x − 3" }]

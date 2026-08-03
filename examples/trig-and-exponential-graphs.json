@@ -81,7 +81,7 @@
               "h": 5
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -141,7 +141,7 @@
               "h": 4
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -313,7 +313,7 @@
               "h": 5
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -375,7 +375,7 @@
               "h": 4
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -578,7 +578,7 @@
               "h": 5
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -638,7 +638,7 @@
               "h": 4
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -808,7 +808,7 @@
               "h": 6
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -938,7 +938,7 @@
               "h": 6
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1190,7 +1190,7 @@
               "h": 3
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1224,7 +1224,7 @@
               "h": 3
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1258,7 +1258,7 @@
               "h": 3
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1292,7 +1292,7 @@
               "h": 3
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1603,7 +1603,7 @@
               "h": 4
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1764,7 +1764,7 @@
               "h": 3
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -1951,7 +1951,7 @@
               "h": 4
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -2140,7 +2140,7 @@
               "h": 4
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -2519,7 +2519,7 @@
               "h": 6
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -2678,7 +2678,7 @@
               "h": 6
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -2986,7 +2986,7 @@
               "h": 6
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
@@ -3201,7 +3201,7 @@
               "h": 6
             },
             "model": {
-              "ref": "graphing/function-graph@5",
+              "ref": "graphing/function-graph@6",
               "params": {
                 "axes": {
                   "x": [
